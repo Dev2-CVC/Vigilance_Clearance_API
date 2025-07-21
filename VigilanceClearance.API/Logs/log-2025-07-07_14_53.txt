@@ -1,0 +1,65 @@
+2025-07-07 14:53:49.879 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-07 14:53:50.081 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-07 14:53:50.116 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-07 14:53:50.116 +05:30 [Information] Hosting environment: "Development"
+2025-07-07 14:53:50.116 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-07 14:53:50.304 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 228.7396ms
+2025-07-07 14:53:50.308 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-07 14:53:50.308 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-07 14:53:50.312 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 3.1213ms
+2025-07-07 14:53:50.348 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 39.6993ms
+2025-07-07 14:53:50.397 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-07 14:53:50.429 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 31.3683ms
+2025-07-07 14:54:09.522 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - "application/json" 439
+2025-07-07 14:54:09.674 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-07 14:54:09.677 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-07 14:54:09.679 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - 401 null null 157.3722ms
+2025-07-07 14:54:39.484 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/PunishmentAwarded_10/GetPunishmentAwardedlist""?id=2" - null null
+2025-07-07 14:54:39.507 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.GetPunishmentAwardedlist (VigilanceClearance.API)"'
+2025-07-07 14:54:39.525 +05:30 [Information] Route matched with "{action = \"GetPunishmentAwardedlist\", controller = \"PunishmentAwarded_10\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPunishmentAwardedlist(Int64)" on controller "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller" ("VigilanceClearance.API").
+2025-07-07 14:54:42.826 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-07 14:54:42.852 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.GetPunishmentAwardedlist (VigilanceClearance.API)" in 3324.2678ms
+2025-07-07 14:54:42.853 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.GetPunishmentAwardedlist (VigilanceClearance.API)"'
+2025-07-07 14:54:42.859 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/PunishmentAwarded_10/GetPunishmentAwardedlist""?id=2" - 200 null "application/json; charset=utf-8" 3375.0318ms
+2025-07-07 14:55:01.210 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetByMasterReferenceID""?id=2" - null null
+2025-07-07 14:55:01.221 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-07 14:55:01.221 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-07 14:55:01.222 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetByMasterReferenceID""?id=2" - 401 null null 11.9214ms
+2025-07-07 14:56:16.967 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 394
+2025-07-07 14:56:16.973 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-07 14:56:16.980 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-07 14:56:19.193 +05:30 [Information] Executed DbCommand ("37"ms) [Parameters=["@officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 6), @whether_Suspended='?' (Size = 6), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 6), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 6), @presentStatusOftheCase='?' (Size = 6), @CreatedBy='?' (Size = 6), @CreatedBy_SessionId='?' (Size = 6), @CreatedBy_IP='?' (Size = 6)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-07 14:56:19.199 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-07 14:56:19.200 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 2219.6219ms
+2025-07-07 14:56:19.200 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-07 14:56:19.201 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 2234.0234ms
+2025-07-07 14:56:28.225 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-07 14:56:28.238 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 12.3394ms
+2025-07-07 14:56:28.250 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-07 14:56:28.250 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-07 14:56:28.251 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.3466ms
+2025-07-07 14:56:28.264 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.0689ms
+2025-07-07 14:56:28.307 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-07 14:56:28.332 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 25.1806ms
+2025-07-07 14:58:42.782 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-07 14:58:42.789 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 7.1051ms
+2025-07-07 14:58:42.800 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-07 14:58:42.801 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-07 14:58:42.802 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.867ms
+2025-07-07 14:58:42.818 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 18.1679ms
+2025-07-07 14:58:42.857 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-07 14:58:42.872 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 14.7574ms

@@ -1,0 +1,19 @@
+2025-07-02 11:45:49.849 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-02 11:45:50.058 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-02 11:45:50.097 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-02 11:45:50.097 +05:30 [Information] Hosting environment: "Development"
+2025-07-02 11:45:50.098 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-02 11:45:50.297 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 244.6344ms
+2025-07-02 11:45:50.299 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-02 11:45:50.301 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-02 11:45:50.306 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 3.874ms
+2025-07-02 11:45:50.338 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 37.3072ms
+2025-07-02 11:45:50.372 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-02 11:45:50.419 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 47.2072ms
+2025-07-02 11:46:00.882 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerPostingDetails/GetOfficerPostingDetailsByPostingId""?id=7" - null null
+2025-07-02 11:46:01.100 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.GetOfficerPostingDetailsByPostingId (VigilanceClearance.API)"'
+2025-07-02 11:46:01.127 +05:30 [Information] Route matched with "{action = \"GetOfficerPostingDetailsByPostingId\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOfficerPostingDetailsByPostingId(Int64)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-07-02 11:46:09.723 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-02 11:46:09.771 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.GetOfficerPostingDetailsByPostingId (VigilanceClearance.API)" in 8638.666ms
+2025-07-02 11:46:09.771 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.GetOfficerPostingDetailsByPostingId (VigilanceClearance.API)"'
+2025-07-02 11:46:09.785 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerPostingDetails/GetOfficerPostingDetailsByPostingId""?id=7" - 200 null "application/json; charset=utf-8" 8903.7255ms

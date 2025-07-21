@@ -1,0 +1,63 @@
+2025-06-30 17:54:12.723 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-30 17:54:12.992 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-06-30 17:54:13.137 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-30 17:54:13.137 +05:30 [Information] Hosting environment: "Development"
+2025-06-30 17:54:13.137 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-06-30 17:54:13.262 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 277.5726ms
+2025-06-30 17:54:13.279 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-30 17:54:13.280 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-06-30 17:54:13.282 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 2.5449ms
+2025-06-30 17:54:13.308 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 27.7554ms
+2025-06-30 17:54:13.380 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-06-30 17:54:13.397 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 16.8528ms
+2025-06-30 17:55:40.519 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 304
+2025-06-30 17:55:40.952 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:55:41.007 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-30 17:56:10.926 +05:30 [Error] Failed to Insert usp_tbl_Transaction_7_OfficerPostingDetails_1_Insert 
+System.FormatException: String '6/30/2025 12:00:00 AM' was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at VigilanceClearance.Application.Services.OfficerPostingDetailsService.OfficerPostingDetailsService.OfficerPostingDetailsInsert(OfficerPostingDetailsInsert officerPostingDetailsInsert) in C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.Application\Services\OfficerPostingDetailsService\OfficerPostingDetailsService.cs:line 38
+2025-06-30 17:56:11.884 +05:30 [Information] Executed DbCommand ("33"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-06-30 17:56:11.971 +05:30 [Error] Failed to load OP Post data
+System.FormatException: String '6/30/2025 12:00:00 AM' was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at VigilanceClearance.Application.Services.OfficerPostingDetailsService.OfficerPostingDetailsService.OfficerPostingDetailsInsert(OfficerPostingDetailsInsert officerPostingDetailsInsert) in C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.Application\Services\OfficerPostingDetailsService\OfficerPostingDetailsService.cs:line 38
+   at VigilanceClearance.Application.Services.OfficerPostingDetailsService.OfficerPostingDetailsService.OfficerPostingDetailsInsert(OfficerPostingDetailsInsert officerPostingDetailsInsert) in C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.Application\Services\OfficerPostingDetailsService\OfficerPostingDetailsService.cs:line 96
+   at VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails(OfficerPostingDetailsInsert modelobj) in C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API\Controllers\OfficerPostingDetailsController.cs:line 34
+2025-06-30 17:56:11.987 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-06-30 17:56:11.991 +05:30 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+2025-06-30 17:56:11.994 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 30985.1708ms
+2025-06-30 17:56:11.994 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:56:12.004 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 500 null "text/plain; charset=utf-8" 31485.7313ms
+2025-06-30 17:56:34.296 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 304
+2025-06-30 17:56:34.310 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:56:34.311 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-30 17:56:34.337 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-06-30 17:56:34.378 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 67.1545ms
+2025-06-30 17:56:34.378 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:56:34.379 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 400 null "application/problem+json; charset=utf-8" 82.8827ms
+2025-06-30 17:56:51.795 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-06-30 17:56:51.844 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 48.8149ms
+2025-06-30 17:56:51.856 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-30 17:56:51.856 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-06-30 17:56:51.857 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 1.6135ms
+2025-06-30 17:56:51.882 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 26.9382ms
+2025-06-30 17:56:51.903 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-06-30 17:56:51.921 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 17.6908ms
+2025-06-30 17:57:00.546 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 304
+2025-06-30 17:57:00.547 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:57:00.547 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-30 17:57:00.553 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-06-30 17:57:00.553 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 6.446ms
+2025-06-30 17:57:00.553 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-30 17:57:00.554 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 400 null "application/problem+json; charset=utf-8" 9.7083ms

@@ -1,0 +1,21 @@
+TABLE : tbl_Transaction_8_IntegrityAgreedOrDoubtful
+
+=================================================
+id	bigint	Unchecked
+officerId	bigint	Checked
+enteredInTheList	nvarchar(3)	Checked
+dateOfEntryInTheList	datetime	Checked
+removedFromTheList	nvarchar(3)	Checked
+DateOfRemovalFromTheList	nvarchar(3)	Checked
+CreatedBy	nvarchar(MAX)	Checked
+CreatedOn	datetime	Checked
+CreatedBy_SessionId	nvarchar(MAX)	Checked
+CreatedBy_IP	nvarchar(50)	Checked
+UpdateBy	nvarchar(MAX)	Checked
+UpdatedOn	datetime	Checked
+UpdatedBy_SessionId	nvarchar(MAX)	Checked
+UpdatedBy_IP	nvarchar(MAX)	Checked
+
+==========================================
+WRITE CRUD PROCEDURE SEPARATELY WITH ROLLBACK OPTION 
+procedure name usp_tablename_insert/update/delete/getbyid/getall

@@ -1,0 +1,22 @@
+TABLE : tbl_Transaction_9_AllegationOfMisconductExamined
+
+=================================================
+id	bigint	Unchecked
+officerId	bigint	Checked
+vigilanceAngleExamined	nvarchar(3)	Checked
+caseDetails	nvarchar(MAX)	Checked
+presentStatusOfTheCase	nvarchar(30)	Checked
+actionrecommendedOptions	nvarchar(30)	Checked
+actionRecommendedDetails	nvarchar(MAX)	Checked
+CreatedBy	nvarchar(MAX)	Checked
+CreatedOn	datetime	Checked
+CreatedBy_SessionId	nvarchar(MAX)	Checked
+CreatedBy_IP	nvarchar(50)	Checked
+UpdateBy	nvarchar(MAX)	Checked
+UpdatedOn	datetime	Checked
+UpdatedBy_SessionId	nvarchar(MAX)	Checked
+UpdatedBy_IP	nvarchar(MAX)	Checked
+
+==========================================
+WRITE CRUD PROCEDURE SEPARATELY WITH ROLLBACK OPTION 
+procedure name usp_tablename_insert/update/delete/getbyid/getall

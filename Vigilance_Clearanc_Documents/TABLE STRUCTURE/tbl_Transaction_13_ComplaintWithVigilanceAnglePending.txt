@@ -1,0 +1,20 @@
+TABLE : tbl_Transaction_13_ComplaintWithVigilanceAnglePending
+
+=================================================
+id	bigint	Unchecked
+officerId	bigint	Checked
+whether_vigilanceAngelPending	nvarchar(3)	Checked
+detailsOfTheCase	nvarchar(MAX)	Checked
+presentStatusOftheCase	nvarchar(MAX)	Checked
+addtionalRemarks	nvarchar(MAX)	Checked
+CreatedBy	nvarchar(MAX)	Checked
+CreatedOn	datetime	Checked
+CreatedBy_SessionId	nvarchar(MAX)	Checked
+CreatedBy_IP	nvarchar(50)	Checked
+UpdateBy	nvarchar(MAX)	Checked
+UpdatedOn	datetime	Checked
+UpdatedBy_SessionId	nvarchar(MAX)	Checked
+UpdatedBy_IP	nvarchar(MAX)	Checked
+
+==========================================
+WRITE CRUD PROCEDURE SEPARATELT WITH ROLLBACK OPTION 

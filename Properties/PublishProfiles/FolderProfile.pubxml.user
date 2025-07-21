@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\VIGILANCE_API_PUB</_PublishTargetUrl>
+    <History>True|2025-06-26T11:26:13.7090641Z||;True|2025-06-26T13:01:48.7326195+05:30||;True|2025-06-26T11:26:05.2240774+05:30||;True|2025-06-25T13:17:45.1726139+05:30||;True|2025-06-25T12:23:45.1205963+05:30||;True|2025-06-24T17:24:15.7792427+05:30||;True|2025-06-24T16:47:35.2384289+05:30||;True|2025-06-24T14:38:50.7934305+05:30||;True|2025-06-24T12:21:46.8118265+05:30||;True|2025-06-23T17:43:29.6366022+05:30||;True|2025-06-23T14:40:57.2393590+05:30||;True|2025-06-23T12:01:02.0149140+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+TABLE : tbl_Master_Vc_ServiceNew
+ServiceCodeId	bigint	Unchecked
+ServiceName	nvarchar(MAX)	Checked
+ServiceCode	nvarchar(50)	Unchecked
+createdby	nvarchar(MAX)	Checked
+createdon	smalldatetime	Checked
+createdbyIP	nvarchar(50)	Checked
+updatedby	nvarchar(50)	Checked
+updatedon	smalldatetime	Checked
+updatedbyIP	nvarchar(50)	Checked
+SessionID	nvarchar(50)	Checked
+IsActive	bit	Checked
+ActiveRemark	nvarchar(MAX)	Checked

@@ -1,0 +1,30 @@
+2025-07-03 11:44:18.026 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 11:44:18.230 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-03 11:44:18.284 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-03 11:44:18.284 +05:30 [Information] Hosting environment: "Development"
+2025-07-03 11:44:18.284 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-03 11:44:18.466 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 239.0581ms
+2025-07-03 11:44:18.467 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-03 11:44:18.468 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-03 11:44:18.473 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.4567ms
+2025-07-03 11:44:18.502 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 33.9315ms
+2025-07-03 11:44:18.520 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-03 11:44:18.533 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 13.0159ms
+2025-07-03 11:45:18.473 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/IntegrityAgreedOrDoubtful/IntegrityAgreedOrDoubtful""" - "application/json" 308
+2025-07-03 11:45:18.658 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)"'
+2025-07-03 11:45:18.668 +05:30 [Information] Route matched with "{action = \"AddIntegrityAgreedOrDoubtful\", controller = \"IntegrityAgreedOrDoubtful\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddIntegrityAgreedOrDoubtful(VigilanceClearance.Application.DTOs.Requests.IntegrityAgreedOrDoubtfulInsert)" on controller "VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController" ("VigilanceClearance.API").
+2025-07-03 11:45:19.343 +05:30 [Information] Executed DbCommand ("43"ms) [Parameters=["@officerId='?' (DbType = Int64), @enteredInTheList='?' (Size = 4), @dateOfEntryInTheList='?' (DbType = DateTime), @removedFromTheList='?' (Size = 3), @DateOfRemovalFromTheList='?' (Size = 4), @CreatedBy='?' (Size = 4), @CreatedOn='?' (DbType = DateTime), @CreatedBy_SessionId='?' (Size = 16), @CreatedBy_IP='?' (Size = 6)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_8_IntegrityAgreedOrDoubtful_1_Insert 
+        @officerId, 
+        @enteredInTheList, 
+        @dateOfEntryInTheList, 
+        @removedFromTheList, 
+        @DateOfRemovalFromTheList, 
+        @CreatedBy, 
+        @CreatedOn, 
+        @CreatedBy_SessionId, 
+        @CreatedBy_IP"
+2025-07-03 11:45:19.351 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-03 11:45:19.355 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)" in 685.1151ms
+2025-07-03 11:45:19.356 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)"'
+2025-07-03 11:45:19.364 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/IntegrityAgreedOrDoubtful/IntegrityAgreedOrDoubtful""" - 200 null "application/json; charset=utf-8" 890.8678ms

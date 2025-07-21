@@ -1,0 +1,14 @@
+2025-06-26 11:14:26.934 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-26 11:14:27.151 +05:30 [Information] Now listening on: "https://localhost:7191"
+2025-06-26 11:14:27.151 +05:30 [Information] Now listening on: "http://localhost:5116"
+2025-06-26 11:14:27.153 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-26 11:14:27.154 +05:30 [Information] Hosting environment: "Development"
+2025-06-26 11:14:27.154 +05:30 [Information] Content root path: "F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.API"
+2025-06-26 11:14:27.509 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-26 11:14:29.866 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2359.8665ms
+2025-06-26 11:14:29.871 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-26 11:14:29.871 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-26 11:14:29.877 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 5.9881ms
+2025-06-26 11:14:30.255 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 383.8885ms
+2025-06-26 11:14:31.442 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-26 11:14:31.542 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 100.197ms

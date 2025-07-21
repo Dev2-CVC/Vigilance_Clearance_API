@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\VigilanceClearance_Api</_PublishTargetUrl>
+    <History>True|2025-07-03T09:06:50.1329048Z||;True|2025-07-03T11:46:27.7949689+05:30||;True|2025-07-03T11:34:22.2953013+05:30||;True|2025-07-02T15:29:22.0483981+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SQLConnection">
+      <Value>Data Source=10.25.34.185%3bdatabase=VigilanceClearance%3bUser ID=sa%3bPassword=Qpr%402025%3bIntegrated Security=false%3bConnection Timeout=150%3bTrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

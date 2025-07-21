@@ -1,0 +1,32 @@
+2025-07-03 16:57:38.378 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 16:57:38.574 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-03 16:57:38.609 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-03 16:57:38.609 +05:30 [Information] Hosting environment: "Development"
+2025-07-03 16:57:38.609 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-03 16:57:38.814 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 243.8075ms
+2025-07-03 16:57:38.827 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-03 16:57:38.827 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-03 16:57:38.830 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 2.8233ms
+2025-07-03 16:57:38.859 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 32.0145ms
+2025-07-03 16:57:38.904 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-03 16:57:38.927 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.0084ms
+2025-07-03 17:00:36.895 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - "application/json" 354
+2025-07-03 17:00:37.066 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-03 17:00:37.084 +05:30 [Information] Route matched with "{action = \"AddPunishmentAwarded\", controller = \"PunishmentAwarded_10\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPunishmentAwarded(VigilanceClearance.Application.DTOs.Requests.PunishmentAwarded)" on controller "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller" ("VigilanceClearance.API").
+2025-07-03 17:01:15.015 +05:30 [Information] Executed DbCommand ("57"ms) [Parameters=["@officerId='?' (DbType = Int64), @punishmentAwarded='?' (Size = 4), @punishmentDetails='?' (Size = 5), @punishmentFromDate='?' (Size = 10), @punishmentToDate='?' (Size = 10), @checkName_FromDate='?' (Size = 10), @checkName_ToDate='?' (Size = 10), @additionalRemarks_IfAny='?' (Size = 8), @CreatedBy='?' (Size = 5), @CreatedBy_SessionId='?' (Size = 5), @CreatedBy_IP='?' (Size = 5)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_10_PunishmentAwarded_1_Insert 
+                               @officerId, 
+                               @punishmentAwarded, 
+                               @punishmentDetails, 
+                               @punishmentFromDate, 
+                               @punishmentToDate, 
+                               @checkName_FromDate, 
+                               @checkName_ToDate, 
+                               @additionalRemarks_IfAny, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-03 17:01:24.402 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-03 17:01:25.937 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)" in 48850.3919ms
+2025-07-03 17:01:25.938 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-03 17:01:25.945 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - 200 null "application/json; charset=utf-8" 49052.7525ms
