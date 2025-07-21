@@ -1,0 +1,357 @@
+2025-06-25 16:39:04.277 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-25 16:39:04.486 +05:30 [Information] Now listening on: "https://localhost:7191"
+2025-06-25 16:39:04.486 +05:30 [Information] Now listening on: "http://localhost:5116"
+2025-06-25 16:39:04.488 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-25 16:39:04.488 +05:30 [Information] Hosting environment: "Development"
+2025-06-25 16:39:04.488 +05:30 [Information] Content root path: "F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.API"
+2025-06-25 16:39:04.970 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:39:05.711 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 745.2076ms
+2025-06-25 16:39:06.575 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:39:06.575 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:39:06.579 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.1104ms
+2025-06-25 16:39:06.611 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 35.4757ms
+2025-06-25 16:39:07.399 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:39:07.751 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 352.5327ms
+2025-06-25 16:39:21.212 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/VcReferenceReceivedForGetById""?UserName=Ministry" - null null
+2025-06-25 16:39:21.350 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-06-25 16:39:21.369 +05:30 [Information] Route matched with "{action = \"VcReferenceReceivedForGetById\", controller = \"VcReferenceReceivedFor\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VcReferenceReceivedForGetById(Int64, System.String)" on controller "VigilanceClearance.API.Controllers.VcReferenceReceivedForController" ("VigilanceClearance.API").
+2025-06-25 16:39:21.374 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)" in 1.9022ms
+2025-06-25 16:39:21.374 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-06-25 16:39:22.459 +05:30 [Error] Failed executing DbCommand ("45"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-06-25 16:39:22.478 +05:30 [Error] An exception occurred in the database while saving changes for context type '"VigilanceClearance.Infrastructure.Infrastructure.Persistence.DbContexts.VCDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-06-25 16:39:22.568 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.LogService.LogAsync(String message, String stackTrace, String level) in F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.Application\Services\LogService .cs:line 27
+   at VigilanceClearance.API.Infrastructure.MiddleWare.ErrorHandlerMiddleware.Invoke(HttpContext context, ILogService logService) in F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.API\Infrastructure\MiddleWare\ErrorHandlerMiddleware.cs:line 22
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:39:22.579 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/VcReferenceReceivedForGetById""?UserName=Ministry" - 500 null "text/plain; charset=utf-8" 1367.4511ms
+2025-06-25 16:39:38.206 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/VcReferenceReceivedForGetById""?id=1&UserName=Ministry" - null null
+2025-06-25 16:39:38.209 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-06-25 16:39:38.210 +05:30 [Information] Route matched with "{action = \"VcReferenceReceivedForGetById\", controller = \"VcReferenceReceivedFor\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VcReferenceReceivedForGetById(Int64, System.String)" on controller "VigilanceClearance.API.Controllers.VcReferenceReceivedForController" ("VigilanceClearance.API").
+2025-06-25 16:39:38.211 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)" in 0.7379ms
+2025-06-25 16:39:38.211 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-06-25 16:39:38.282 +05:30 [Error] Failed executing DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-06-25 16:39:38.285 +05:30 [Error] An exception occurred in the database while saving changes for context type '"VigilanceClearance.Infrastructure.Infrastructure.Persistence.DbContexts.VCDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-06-25 16:39:38.352 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LogEntries'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a4aeb77c-6f31-4f25-a267-a303a441be49
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.LogService.LogAsync(String message, String stackTrace, String level) in F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.Application\Services\LogService .cs:line 27
+   at VigilanceClearance.API.Infrastructure.MiddleWare.ErrorHandlerMiddleware.Invoke(HttpContext context, ILogService logService) in F:\VigilanceClearance\VigilanceClearance\VigilanceClearance.API\Infrastructure\MiddleWare\ErrorHandlerMiddleware.cs:line 22
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:39:38.355 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/VcReferenceReceivedForGetById""?id=1&UserName=Ministry" - 500 null "text/plain; charset=utf-8" 148.4105ms
+2025-06-25 16:40:39.185 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:40:39.201 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 15.4651ms
+2025-06-25 16:40:39.210 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:40:39.210 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:40:39.211 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 1.4761ms
+2025-06-25 16:40:39.222 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 11.819ms
+2025-06-25 16:40:39.936 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:40:39.945 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:40:39.946 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 10.0701ms
+2025-06-25 16:41:03.044 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:03.052 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 6.4958ms
+2025-06-25 16:41:03.063 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:03.063 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:03.064 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9485ms
+2025-06-25 16:41:03.081 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 17.3529ms
+2025-06-25 16:41:03.631 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:03.639 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:03.639 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 8.7799ms
+2025-06-25 16:41:14.363 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:14.367 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 5.1758ms
+2025-06-25 16:41:14.378 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:14.378 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:14.379 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9954ms
+2025-06-25 16:41:14.394 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 16.7368ms
+2025-06-25 16:41:14.748 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:14.754 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:14.755 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 6.9696ms
+2025-06-25 16:41:15.570 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:15.574 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 3.3394ms
+2025-06-25 16:41:15.584 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:15.584 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:15.585 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9285ms
+2025-06-25 16:41:15.592 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 8.5656ms
+2025-06-25 16:41:15.940 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:15.945 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:15.946 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 5.3697ms
+2025-06-25 16:41:32.494 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:32.497 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 3.3542ms
+2025-06-25 16:41:32.506 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:32.512 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:32.513 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9982ms
+2025-06-25 16:41:32.521 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.8116ms
+2025-06-25 16:41:32.861 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:32.867 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:32.867 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 6.0752ms
+2025-06-25 16:41:45.932 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:45.934 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2.7385ms
+2025-06-25 16:41:45.943 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:45.943 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:45.943 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9152ms
+2025-06-25 16:41:45.950 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 7.2881ms
+2025-06-25 16:41:46.467 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:46.473 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:46.474 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 7.391ms
+2025-06-25 16:41:50.272 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:50.275 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 3.4003ms
+2025-06-25 16:41:50.285 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:50.285 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:50.286 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 1.1388ms
+2025-06-25 16:41:50.294 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 9.2522ms
+2025-06-25 16:41:50.648 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:50.655 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:50.656 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 7.1958ms
+2025-06-25 16:41:51.247 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:51.256 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 8.688ms
+2025-06-25 16:41:51.296 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:51.296 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:51.297 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.729ms
+2025-06-25 16:41:51.307 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 10.4219ms
+2025-06-25 16:41:51.641 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:51.646 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:51.646 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 5.4543ms
+2025-06-25 16:41:52.181 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-25 16:41:52.186 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 5.2401ms
+2025-06-25 16:41:52.195 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-25 16:41:52.195 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-25 16:41:52.196 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 1.1029ms
+2025-06-25 16:41:52.206 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 10.3577ms
+2025-06-25 16:41:52.544 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-25 16:41:52.548 +05:30 [Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET VcReferenceReceivedForGetById" for actions - VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API),VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-25 16:41:52.549 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 4.9703ms

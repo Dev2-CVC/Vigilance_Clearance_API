@@ -1,0 +1,15 @@
+2025-07-03 17:45:06.973 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 17:45:07.141 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-03 17:45:07.179 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-03 17:45:07.179 +05:30 [Information] Hosting environment: "Development"
+2025-07-03 17:45:07.179 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-03 17:45:07.386 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 248.2042ms
+2025-07-03 17:45:07.392 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-03 17:45:07.395 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-03 17:45:07.397 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.6808ms
+2025-07-03 17:45:07.426 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 31.3402ms
+2025-07-03 17:45:07.494 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-03 17:45:07.521 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 26.9366ms
+2025-07-03 17:45:30.793 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/DropDown/ServiceGetAll""" - null null
+2025-07-03 17:45:30.965 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DropDownController.ServiceGetAll (VigilanceClearance.API)"'
+2025-07-03 17:45:30.980 +05:30 [Information] Route matched with "{action = \"ServiceGetAll\", controller = \"DropDown\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServiceGetAll()" on controller "VigilanceClearance.API.Controllers.DropDownController" ("VigilanceClearance.API").

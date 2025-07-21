@@ -1,0 +1,31 @@
+2025-07-18 16:30:38.836 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-18 16:30:38.993 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-18 16:30:39.000 +05:30 [Information] Hosting environment: "Development"
+2025-07-18 16:30:39.000 +05:30 [Information] Content root path: "F:\APICode_17_07_2025\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-18 16:30:39.027 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger""" - null null
+2025-07-18 16:30:40.639 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-18 16:30:40.709 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger""" - 301 null null 1687.4447ms
+2025-07-18 16:30:40.771 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 131.4588ms
+2025-07-18 16:30:40.807 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui-bundle.js""" - null null
+2025-07-18 16:30:40.807 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-18 16:30:40.807 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui.css""" - null null
+2025-07-18 16:30:40.823 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-07-18 16:30:40.823 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-18 16:30:40.825 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 17.3642ms
+2025-07-18 16:30:40.841 +05:30 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-07-18 16:30:40.841 +05:30 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-07-18 16:30:40.850 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui-standalone-preset.js""" - 200 230280 "text/javascript" 27.4577ms
+2025-07-18 16:30:40.853 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui.css""" - 200 152034 "text/css" 46.1565ms
+2025-07-18 16:30:40.858 +05:30 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-07-18 16:30:40.890 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/swagger-ui-bundle.js""" - 200 1456926 "text/javascript" 101.3482ms
+2025-07-18 16:30:40.899 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 75.8921ms
+2025-07-18 16:30:41.051 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-18 16:30:41.075 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/favicon-32x32.png""" - null null
+2025-07-18 16:30:41.079 +05:30 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2025-07-18 16:30:41.080 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 4.8199ms
+2025-07-18 16:30:41.213 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 161.8907ms
+2025-07-18 16:42:56.174 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - null null
+2025-07-18 16:42:56.814 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-18 16:42:56.816 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-18 16:42:56.818 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - 401 null null 644.7258ms

@@ -1,0 +1,57 @@
+2025-07-11 12:59:34.601 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-11 12:59:34.808 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-11 12:59:34.846 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-11 12:59:34.846 +05:30 [Information] Hosting environment: "Development"
+2025-07-11 12:59:34.846 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-11 12:59:35.083 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-11 12:59:35.085 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-11 12:59:35.085 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 276.0814ms
+2025-07-11 12:59:35.087 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.5115ms
+2025-07-11 12:59:35.120 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 34.8699ms
+2025-07-11 12:59:35.258 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-11 12:59:35.288 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 30.403ms
+2025-07-11 13:00:18.795 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/InsertReferenceReceivedFor""" - "application/json" 459
+2025-07-11 13:00:19.022 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-11 13:00:19.025 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-11 13:00:19.027 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/InsertReferenceReceivedFor""" - 401 null null 232.1899ms
+2025-07-11 13:00:48.595 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 60
+2025-07-11 13:00:48.622 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-11 13:00:48.639 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-11 13:00:49.810 +05:30 [Information] Executed DbCommand ("56"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-11 13:00:50.036 +05:30 [Information] Executed DbCommand ("15"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-11 13:00:50.078 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-11 13:00:50.085 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 1443.3775ms
+2025-07-11 13:00:50.085 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-11 13:00:50.114 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 1519.6501ms
+2025-07-11 13:01:11.004 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/InsertReferenceReceivedFor""" - "application/json" 459
+2025-07-11 13:01:11.051 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.InsertReferenceReceivedFor (VigilanceClearance.API)"'
+2025-07-11 13:01:11.057 +05:30 [Information] Route matched with "{action = \"InsertReferenceReceivedFor\", controller = \"VcReferenceReceivedFor\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertReferenceReceivedFor(VigilanceClearance.Application.DTOs.Requests.ReferenceReceivedForModel)" on controller "VigilanceClearance.API.Controllers.VcReferenceReceivedForController" ("VigilanceClearance.API").
+2025-07-11 13:01:22.521 +05:30 [Information] Executed DbCommand ("23"ms) [Parameters=["@ReferenceReceivedFor='?' (Size = 5), @ReferenceReceivedFrom='?' (Size = 5), @ReferenceReceivedFromCode='?' (Size = 5), @selectionForThePostCategory='?' (Size = 5), @selectionForThePostSubCategory='?' (Size = 5), @OrgCode='?' (Size = 5), @OrgName='?' (Size = 5), @MinCode='?' (Size = 5), @MinDesc='?' (Size = 5), @PendingWith='?' (Size = 5), @ReferenceID='?' (Size = 5), @CVC_ReferenceID_FileNo='?' (Size = 5), @CreatedBy='?' (Size = 5), @CreatedBy_SessionId='?' (Size = 5), @CreatedBy_IP='?' (Size = 5)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Master_Vc_ReferenceReceivedFor_1_Insert 
+                               @ReferenceReceivedFor, 
+                               @ReferenceReceivedFrom, 
+                               @ReferenceReceivedFromCode, 
+                               @selectionForThePostCategory, 
+                               @selectionForThePostSubCategory,
+                               @OrgCode,
+                               @OrgName,
+                               @MinCode,
+                               @MinDesc,
+                               @PendingWith,
+                               @ReferenceID,
+                               @CVC_ReferenceID_FileNo,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-11 13:01:27.367 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-11 13:01:27.370 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.VcReferenceReceivedForController.InsertReferenceReceivedFor (VigilanceClearance.API)" in 16312.2609ms
+2025-07-11 13:01:27.370 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.InsertReferenceReceivedFor (VigilanceClearance.API)"'
+2025-07-11 13:01:27.370 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/InsertReferenceReceivedFor""" - 200 null "application/json; charset=utf-8" 16366.2688ms

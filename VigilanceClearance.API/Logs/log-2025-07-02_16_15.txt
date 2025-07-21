@@ -1,0 +1,29 @@
+2025-07-02 16:15:08.287 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-02 16:15:08.534 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-02 16:15:08.568 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-02 16:15:08.568 +05:30 [Information] Hosting environment: "Development"
+2025-07-02 16:15:08.568 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-02 16:15:09.962 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1432.3366ms
+2025-07-02 16:15:10.013 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-02 16:15:10.013 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-02 16:15:10.016 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 2.7929ms
+2025-07-02 16:15:10.066 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 52.8652ms
+2025-07-02 16:15:10.167 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-02 16:15:10.189 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.437ms
+2025-07-02 16:15:37.873 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-02 16:15:38.015 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-02 16:15:38.049 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-02 16:15:38.050 +05:30 [Information] Hosting environment: "Development"
+2025-07-02 16:15:38.050 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-02 16:15:38.225 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-02 16:15:38.226 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 209.2242ms
+2025-07-02 16:15:38.228 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-02 16:15:38.237 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 7.4812ms
+2025-07-02 16:15:38.266 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 43.7258ms
+2025-07-02 16:15:38.292 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-02 16:15:38.313 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 22.8219ms
+2025-07-02 16:15:55.547 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerPostingDetails/OfficerPostingDetailsGetByOfficerId""?id=105" - null null
+2025-07-02 16:15:56.989 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-02 16:15:56.992 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-02 16:15:56.996 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerPostingDetails/OfficerPostingDetailsGetByOfficerId""?id=105" - 401 null null 1448.94ms

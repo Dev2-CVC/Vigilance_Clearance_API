@@ -1,0 +1,72 @@
+2025-07-17 11:05:13.408 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 11:05:13.554 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-17 11:05:13.559 +05:30 [Information] Hosting environment: "Development"
+2025-07-17 11:05:13.559 +05:30 [Information] Content root path: "F:\APICode_17_07_2025\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-17 11:05:13.583 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-17 11:05:13.854 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 275.5175ms
+2025-07-17 11:05:13.864 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-17 11:05:13.866 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-17 11:05:13.868 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.7886ms
+2025-07-17 11:05:13.898 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 32.0423ms
+2025-07-17 11:05:14.815 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-17 11:05:14.943 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 128.5418ms
+2025-07-17 11:05:38.545 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 59
+2025-07-17 11:05:38.698 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-17 11:05:38.722 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-17 11:05:39.754 +05:30 [Information] Executed DbCommand ("48"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-17 11:05:39.954 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-17 11:05:39.992 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-17 11:05:39.999 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 1274.5547ms
+2025-07-17 11:05:39.999 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-17 11:05:40.006 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 1460.6535ms
+2025-07-17 11:06:16.565 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - null null
+2025-07-17 11:06:16.612 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)"'
+2025-07-17 11:06:16.616 +05:30 [Information] Route matched with "{action = \"OfficerDetailWithPostingDetails\", controller = \"Coord2_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OfficerDetailWithPostingDetails(System.String)" on controller "VigilanceClearance.API.Controllers.Coord2_DealingHandController" ("VigilanceClearance.API").
+2025-07-17 11:06:21.446 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-17 11:06:21.482 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)" in 4866.0395ms
+2025-07-17 11:06:21.482 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)"'
+2025-07-17 11:06:21.482 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - 200 null "application/json; charset=utf-8" 4917.3097ms
+2025-07-17 11:07:35.134 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/CBI_DealingHand/OfficerDetailWithFeebbackOf_CBI""?id=2" - null null
+2025-07-17 11:07:35.143 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.OfficerDetailWithFeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-17 11:07:35.146 +05:30 [Information] Route matched with "{action = \"OfficerDetailWithFeebbackOf_CBI\", controller = \"CBI_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OfficerDetailWithFeebbackOf_CBI(System.String)" on controller "VigilanceClearance.API.Controllers.CBI_DealingHandController" ("VigilanceClearance.API").
+2025-07-17 11:07:35.170 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-17 11:07:35.170 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.CBI_DealingHandController.OfficerDetailWithFeebbackOf_CBI (VigilanceClearance.API)" in 24.5028ms
+2025-07-17 11:07:35.170 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.OfficerDetailWithFeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-17 11:07:35.170 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/CBI_DealingHand/OfficerDetailWithFeebbackOf_CBI""?id=2" - 200 null "application/json; charset=utf-8" 36.57ms
+2025-07-17 11:08:48.134 +05:30 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetAll""" - null null
+2025-07-17 11:08:48.141 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedDetailsGetAll (VigilanceClearance.API)"'
+2025-07-17 11:08:48.145 +05:30 [Information] Route matched with "{action = \"VcReferenceReceivedDetailsGetAll\", controller = \"VcReferenceReceivedFor\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VcReferenceReceivedDetailsGetAll()" on controller "VigilanceClearance.API.Controllers.VcReferenceReceivedForController" ("VigilanceClearance.API").
+2025-07-17 11:08:48.197 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-17 11:08:48.208 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedDetailsGetAll (VigilanceClearance.API)" in 62.8576ms
+2025-07-17 11:08:48.209 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedDetailsGetAll (VigilanceClearance.API)"'
+2025-07-17 11:08:48.210 +05:30 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetAll""" - 200 null "application/json; charset=utf-8" 79.0106ms
+2025-07-17 11:08:50.638 +05:30 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - null null
+2025-07-17 11:08:50.639 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)"'
+2025-07-17 11:08:50.639 +05:30 [Information] Route matched with "{action = \"OfficerDetailWithPostingDetails\", controller = \"Coord2_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OfficerDetailWithPostingDetails(System.String)" on controller "VigilanceClearance.API.Controllers.Coord2_DealingHandController" ("VigilanceClearance.API").
+2025-07-17 11:08:54.322 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-17 11:08:54.322 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)" in 3683.244ms
+2025-07-17 11:08:54.322 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.Coord2_DealingHandController.OfficerDetailWithPostingDetails (VigilanceClearance.API)"'
+2025-07-17 11:08:54.323 +05:30 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/Coord2_DealingHand/OfficerDetailWithPostingDetails""?id=2" - 200 null "application/json; charset=utf-8" 3684.8089ms
+2025-07-17 11:09:00.647 +05:30 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetByMasterReferenceID""?id=2" - null null
+2025-07-17 11:09:00.650 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerDetailsController.OfficerDetailsGetByMasterReferenceID (VigilanceClearance.API)"'
+2025-07-17 11:09:00.653 +05:30 [Information] Route matched with "{action = \"OfficerDetailsGetByMasterReferenceID\", controller = \"OfficerDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OfficerDetailsGetByMasterReferenceID(Int64)" on controller "VigilanceClearance.API.Controllers.OfficerDetailsController" ("VigilanceClearance.API").
+2025-07-17 11:09:04.628 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-17 11:09:04.629 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerDetailsController.OfficerDetailsGetByMasterReferenceID (VigilanceClearance.API)" in 3975.8653ms
+2025-07-17 11:09:04.629 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerDetailsController.OfficerDetailsGetByMasterReferenceID (VigilanceClearance.API)"'
+2025-07-17 11:09:04.629 +05:30 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetByMasterReferenceID""?id=2" - 200 null "application/json; charset=utf-8" 3982.4747ms
+2025-07-17 11:09:07.950 +05:30 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - "application/json; charset=utf-8" 151
+2025-07-17 11:09:07.953 +05:30 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - 404 null null 3.6956ms
+2025-07-17 11:09:07.954 +05:30 [Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate", Response status code: 404
+2025-07-17 11:09:15.788 +05:30 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - "application/json; charset=utf-8" 151
+2025-07-17 11:09:15.789 +05:30 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - 404 null null 0.8668ms
+2025-07-17 11:09:15.789 +05:30 [Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate", Response status code: 404
+2025-07-17 11:09:43.890 +05:30 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - "application/json; charset=utf-8" 151
+2025-07-17 11:09:43.891 +05:30 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate""" - 404 null null 0.989ms
+2025-07-17 11:09:43.891 +05:30 [Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsUpdate", Response status code: 404

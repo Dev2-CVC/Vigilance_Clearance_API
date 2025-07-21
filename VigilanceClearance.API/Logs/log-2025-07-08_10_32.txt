@@ -1,0 +1,80 @@
+2025-07-08 10:32:25.696 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-08 10:32:25.929 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-08 10:32:25.960 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-08 10:32:25.960 +05:30 [Information] Hosting environment: "Development"
+2025-07-08 10:32:25.960 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-08 10:32:26.183 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 258.6582ms
+2025-07-08 10:32:26.184 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-08 10:32:26.184 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-08 10:32:26.187 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 3.3624ms
+2025-07-08 10:32:26.218 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 33.7183ms
+2025-07-08 10:32:26.256 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-08 10:32:26.279 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.8366ms
+2025-07-08 10:33:22.032 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 333
+2025-07-08 10:33:22.233 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:33:22.251 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:33:22.281 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-07-08 10:33:22.301 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 47.1127ms
+2025-07-08 10:33:22.301 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:33:22.305 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 400 null "application/problem+json; charset=utf-8" 273.4304ms
+2025-07-08 10:34:05.137 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 345
+2025-07-08 10:34:05.147 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:34:05.148 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:34:24.126 +05:30 [Information] Executed DbCommand ("62"ms) [Parameters=["@officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 2), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 4), @presentStatusOftheCase='?' (Size = 4), @CreatedBy='?' (Size = 4), @CreatedBy_SessionId='?' (Size = 4), @CreatedBy_IP='?' (Size = 4)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-08 10:34:25.440 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-08 10:34:25.442 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 20294.2337ms
+2025-07-08 10:34:25.443 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:34:25.448 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 20310.8506ms
+2025-07-08 10:34:51.748 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 327
+2025-07-08 10:34:51.748 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:34:51.748 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:34:51.754 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-07-08 10:34:51.754 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 5.9595ms
+2025-07-08 10:34:51.754 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:34:51.754 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 400 null "application/problem+json; charset=utf-8" 7.5653ms
+2025-07-08 10:37:27.278 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 329
+2025-07-08 10:37:27.281 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:37:27.281 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:37:27.284 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-07-08 10:37:27.284 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 3.2969ms
+2025-07-08 10:37:27.284 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:37:27.284 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 400 null "application/problem+json; charset=utf-8" 6.4768ms
+2025-07-08 10:37:31.341 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 329
+2025-07-08 10:37:31.341 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:37:31.341 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:37:31.343 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-07-08 10:37:31.343 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 1.8684ms
+2025-07-08 10:37:31.343 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:37:31.344 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 400 null "application/problem+json; charset=utf-8" 3.0126ms
+2025-07-08 10:37:50.625 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 329
+2025-07-08 10:37:50.625 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:37:50.625 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-08 10:43:40.539 +05:30 [Information] Executed DbCommand ("20"ms) [Parameters=["@officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 2), @suspensionDate='?', @whetherRevoked='?' (Size = 2), @revocationDate='?', @detailsOf_Case='?' (Size = 4), @presentStatusOftheCase='?' (Size = 4), @CreatedBy='?' (Size = 4), @CreatedBy_SessionId='?' (Size = 4), @CreatedBy_IP='?' (Size = 4)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-08 10:43:43.530 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-08 10:43:43.531 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 352905.6121ms
+2025-07-08 10:43:43.531 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-08 10:43:43.531 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 352907.0315ms

@@ -1,0 +1,27 @@
+2025-07-07 14:51:33.289 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-07 14:51:33.490 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-07 14:51:33.525 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-07 14:51:33.525 +05:30 [Information] Hosting environment: "Development"
+2025-07-07 14:51:33.525 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-07 14:51:33.725 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 239.189ms
+2025-07-07 14:51:33.735 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-07 14:51:33.735 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-07 14:51:33.740 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 2.4151ms
+2025-07-07 14:51:33.764 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 31.7955ms
+2025-07-07 14:51:33.799 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-07 14:51:33.822 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.0276ms
+2025-07-07 14:52:34.659 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - "application/json" 389
+2025-07-07 14:52:34.825 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-07 14:52:34.828 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-07 14:52:34.830 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - 401 null null 171.3994ms
+2025-07-07 14:53:12.284 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - "application/json" 389
+2025-07-07 14:53:12.303 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-07 14:53:12.303 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-07 14:53:12.304 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - 401 null null 19.9712ms
+2025-07-07 14:53:30.077 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetById""?id=2" - null null
+2025-07-07 14:53:30.080 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-07 14:53:30.080 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-07 14:53:30.081 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/OfficerDetails/OfficerDetailsGetById""?id=2" - 401 null null 4.2743ms

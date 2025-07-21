@@ -1,0 +1,105 @@
+2025-07-03 18:11:04.604 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 18:11:04.775 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-03 18:11:04.809 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-03 18:11:04.809 +05:30 [Information] Hosting environment: "Development"
+2025-07-03 18:11:04.809 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-03 18:11:05.005 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-03 18:11:05.008 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-03 18:11:05.008 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 235.3832ms
+2025-07-03 18:11:05.019 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 8.245ms
+2025-07-03 18:11:05.041 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 35.1472ms
+2025-07-03 18:11:05.091 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-03 18:11:05.113 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 21.7843ms
+2025-07-03 18:11:16.471 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/DropDown/CadreGetAll""" - null null
+2025-07-03 18:11:16.651 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DropDownController.CadreGetAll (VigilanceClearance.API)"'
+2025-07-03 18:11:16.664 +05:30 [Information] Route matched with "{action = \"CadreGetAll\", controller = \"DropDown\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CadreGetAll()" on controller "VigilanceClearance.API.Controllers.DropDownController" ("VigilanceClearance.API").
+2025-07-03 18:11:22.773 +05:30 [Error] Failed executing DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[CadreDesc] AS [Text], [m].[CadreType] AS [Value]
+FROM [Master_Vc_Cadre] AS [m]"
+2025-07-03 18:11:22.801 +05:30 [Error] An exception occurred while iterating over the results of a query for context type '"VigilanceClearance.Infrastructure.Infrastructure.Persistence.DbContexts.VCDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Master_Vc_Cadre'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:291c5d8c-0542-4477-8001-38367dd149c7
+Error Number:208,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Master_Vc_Cadre'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:291c5d8c-0542-4477-8001-38367dd149c7
+Error Number:208,State:1,Class:16
+2025-07-03 18:12:30.951 +05:30 [Error] Failed to load VcReferenceGetAll for id
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Master_Vc_Cadre'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.DropDownServices.DropDownService.GetAllCadre() in C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.Application\DropDownServices\DropDownService.cs:line 297
+ClientConnectionId:291c5d8c-0542-4477-8001-38367dd149c7
+Error Number:208,State:1,Class:16
+2025-07-03 18:12:31.127 +05:30 [Information] Executed DbCommand ("33"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-03 18:12:31.222 +05:30 [Error] Failed to load VC Post data
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Master_Vc_Cadre'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.DropDownServices.DropDownService.GetAllCadre() in C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.Application\DropDownServices\DropDownService.cs:line 297
+   at VigilanceClearance.Application.DropDownServices.DropDownService.GetAllCadre() in C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.Application\DropDownServices\DropDownService.cs:line 316
+   at VigilanceClearance.API.Controllers.DropDownController.CadreGetAll() in C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API\Controllers\DropDownController.cs:line 191
+ClientConnectionId:291c5d8c-0542-4477-8001-38367dd149c7
+Error Number:208,State:1,Class:16
+2025-07-03 18:12:31.237 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-03 18:12:31.243 +05:30 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+2025-07-03 18:12:31.246 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DropDownController.CadreGetAll (VigilanceClearance.API)" in 74579.9919ms
+2025-07-03 18:12:31.247 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DropDownController.CadreGetAll (VigilanceClearance.API)"'
+2025-07-03 18:12:31.253 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/DropDown/CadreGetAll""" - 500 null "text/plain; charset=utf-8" 74781.6672ms

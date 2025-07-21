@@ -1,0 +1,21 @@
+2025-07-01 10:05:29.657 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-01 10:05:29.886 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 10:05:29.906 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-01 10:05:29.907 +05:30 [Information] Hosting environment: "Development"
+2025-07-01 10:05:29.907 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-07-01 10:05:30.227 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 346.5962ms
+2025-07-01 10:05:30.230 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 10:05:30.230 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 10:05:30.235 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.2512ms
+2025-07-01 10:05:30.287 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 56.8183ms
+2025-07-01 10:05:30.366 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 10:05:30.392 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 25.3619ms
+2025-07-01 10:09:09.302 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 279
+2025-07-01 10:09:09.601 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-07-01 10:09:09.632 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-07-01 10:09:14.014 +05:30 [Information] Executed DbCommand ("82"ms) [Parameters=["@Vc_Officer_Id='?' (DbType = Int32), @orgCode='?' (Size = 6), @designation='?' (Size = 6), @placeOfPosting='?' (Size = 6), @orgMinistry='?' (Size = 6), @fromDate='?' (DbType = DateTime), @toDate='?' (DbType = DateTime), @CreatedBy='?' (Size = 16), @CreatedBy_SessionId='?' (Size = 6), @CreatedBy_IP='?' (Size = 6)"], CommandType='Text', CommandTimeout='30']"
+""EXEC [usp_tbl_Transaction_7_OfficerPostingDetails_1_Insert] @Vc_Officer_Id, @orgCode, @designation, @placeOfPosting, @orgMinistry, @fromDate, @toDate, @CreatedBy, @CreatedBy_SessionId, @CreatedBy_IP"
+2025-07-01 10:09:16.609 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-01 10:09:16.613 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 6979.0072ms
+2025-07-01 10:09:16.614 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-07-01 10:09:16.620 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 200 null "application/json; charset=utf-8" 7317.9373ms

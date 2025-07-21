@@ -1,0 +1,84 @@
+2025-07-01 14:15:18.675 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-01 14:15:18.811 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-01 14:15:18.816 +05:30 [Information] Hosting environment: "Development"
+2025-07-01 14:15:18.816 +05:30 [Information] Content root path: "F:\VigilanceClearance30_June_2025\VigilanceClearance.API"
+2025-07-01 14:15:18.840 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 14:15:19.878 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1041.7344ms
+2025-07-01 14:15:19.879 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 14:15:19.882 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 2.8566ms
+2025-07-01 14:15:19.883 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 14:15:19.925 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.9246ms
+2025-07-01 14:15:20.730 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 14:15:20.840 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 109.6272ms
+2025-07-01 14:15:40.710 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - "application/json" 399
+2025-07-01 14:15:41.239 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:15:41.259 +05:30 [Information] Route matched with "{action = \"FeebbackOf_CBI\", controller = \"CBI_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FeebbackOf_CBI(VigilanceClearance.Application.DTOs.Requests.FeebbackOfCbiInsert)" on controller "VigilanceClearance.API.Controllers.CBI_DealingHandController" ("VigilanceClearance.API").
+2025-07-01 14:15:41.264 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)" in 1.817ms
+2025-07-01 14:15:41.264 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:15:42.992 +05:30 [Information] Executed DbCommand ("96"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-01 14:15:43.036 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - 500 null null 2326.0625ms
+2025-07-01 14:17:09.573 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 14:17:09.582 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 8.7092ms
+2025-07-01 14:17:09.594 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 14:17:09.594 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 14:17:09.595 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.6888ms
+2025-07-01 14:17:09.614 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 20.1704ms
+2025-07-01 14:17:10.176 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 14:17:10.189 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 12.9709ms
+2025-07-01 14:18:15.947 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - "application/json" 398
+2025-07-01 14:18:15.952 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:18:15.960 +05:30 [Information] Route matched with "{action = \"FeebbackOf_CBI\", controller = \"CBI_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FeebbackOf_CBI(VigilanceClearance.Application.DTOs.Requests.FeebbackOfCbiInsert)" on controller "VigilanceClearance.API.Controllers.CBI_DealingHandController" ("VigilanceClearance.API").
+2025-07-01 14:18:15.966 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)" in 5.9295ms
+2025-07-01 14:18:15.967 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:18:16.050 +05:30 [Information] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-01 14:18:16.051 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - 500 null null 103.4679ms
+2025-07-01 14:19:58.048 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 14:19:58.058 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 10.0803ms
+2025-07-01 14:19:58.171 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 14:19:58.171 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 14:19:58.172 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.5978ms
+2025-07-01 14:19:58.183 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 11.5427ms
+2025-07-01 14:19:58.809 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 14:19:58.819 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.9613ms
+2025-07-01 14:20:28.290 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - "application/json" 400
+2025-07-01 14:20:28.297 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:20:28.300 +05:30 [Information] Route matched with "{action = \"FeebbackOf_CBI\", controller = \"CBI_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FeebbackOf_CBI(VigilanceClearance.Application.DTOs.Requests.FeebbackOfCbiInsert)" on controller "VigilanceClearance.API.Controllers.CBI_DealingHandController" ("VigilanceClearance.API").
+2025-07-01 14:20:28.300 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)" in 0.6411ms
+2025-07-01 14:20:28.301 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:20:28.345 +05:30 [Information] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-01 14:20:28.346 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - 500 null null 56.0934ms
+2025-07-01 14:21:41.505 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 14:21:41.527 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 21.7857ms
+2025-07-01 14:21:41.552 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 14:21:41.552 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 14:21:41.553 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.9637ms
+2025-07-01 14:21:41.566 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 13.9241ms
+2025-07-01 14:21:42.261 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 14:21:42.273 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 11.5348ms
+2025-07-01 14:23:34.715 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - "application/json" 397
+2025-07-01 14:23:34.717 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:23:34.731 +05:30 [Information] Route matched with "{action = \"FeebbackOf_CBI\", controller = \"CBI_DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FeebbackOf_CBI(VigilanceClearance.Application.DTOs.Requests.FeebbackOfCbiInsert)" on controller "VigilanceClearance.API.Controllers.CBI_DealingHandController" ("VigilanceClearance.API").
+2025-07-01 14:23:34.732 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)" in 0.5186ms
+2025-07-01 14:23:34.732 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.CBI_DealingHandController.FeebbackOf_CBI (VigilanceClearance.API)"'
+2025-07-01 14:23:34.768 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-01 14:23:34.768 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/CBI_DealingHand/FeebbackOf_CBI""" - 500 null null 53.2474ms

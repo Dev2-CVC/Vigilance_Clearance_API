@@ -1,0 +1,17 @@
+2025-07-16 16:38:26.055 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-16 16:38:26.242 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-16 16:38:26.286 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-16 16:38:26.286 +05:30 [Information] Hosting environment: "Development"
+2025-07-16 16:38:26.286 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-16 16:38:26.519 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 282.4358ms
+2025-07-16 16:38:26.521 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-16 16:38:26.530 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.7349ms
+2025-07-16 16:38:26.533 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-16 16:38:26.569 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 36.1573ms
+2025-07-16 16:38:26.620 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-16 16:38:26.645 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 25.3282ms
+2025-07-16 16:39:14.302 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/UpdateReferenceFromPESB""" - "application/json" 141
+2025-07-16 16:39:14.509 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-16 16:39:14.512 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-16 16:39:14.514 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/UpdateReferenceFromPESB""" - 401 null null 212.402ms

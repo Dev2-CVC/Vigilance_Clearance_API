@@ -1,0 +1,15 @@
+TABLE : tbl_transaction_PDF
+
+=================================================
+id	bigint	Unchecked
+officerId	bigint	Checked
+documentId	nvarchar(MAX)	Checked
+documentCode	nvarchar(MAX)	Checked
+CreatedBy	nvarchar(MAX)	Checked
+CreatedOn	datetime	Checked
+CreatedBy_SessionId	nvarchar(MAX)	Checked
+CreatedBy_IP	nvarchar(50)	Checked
+
+==========================================
+WRITE CRUD PROCEDURE SEPARATELY WITH ROLLBACK OPTION 
+procedure name usp_tablename_1_Insert/2_Update/3_Delete/4_Getbyid/5_Getall

@@ -1,0 +1,45 @@
+2025-06-27 10:32:28.915 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-27 10:32:29.074 +05:30 [Information] Now listening on: "https://localhost:7191"
+2025-06-27 10:32:29.074 +05:30 [Information] Now listening on: "http://localhost:5116"
+2025-06-27 10:32:29.126 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-27 10:32:29.127 +05:30 [Information] Hosting environment: "Development"
+2025-06-27 10:32:29.127 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-06-27 10:32:29.303 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-27 10:32:30.582 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1282.5173ms
+2025-06-27 10:32:30.598 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-27 10:32:30.598 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-27 10:32:30.615 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 17.5165ms
+2025-06-27 10:32:30.643 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 45.3688ms
+2025-06-27 10:32:30.665 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-27 10:32:30.681 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 16.2071ms
+2025-06-27 10:32:52.122 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 618
+2025-06-27 10:32:52.835 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:32:52.860 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-27 10:32:52.914 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-06-27 10:32:52.933 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 68.6021ms
+2025-06-27 10:32:52.933 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:32:52.935 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 400 null "application/problem+json; charset=utf-8" 813.1505ms
+2025-06-27 10:33:11.955 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 621
+2025-06-27 10:33:11.980 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:33:11.980 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-27 10:33:32.618 +05:30 [Information] Executed DbCommand ("63"ms) [Parameters=["@Vc_Officer_Id='?' (DbType = Int32), @orgCode='?' (Size = 6), @designation='?' (Size = 14), @placeOfPosting='?' (Size = 9), @orgMinistry='?' (Size = 19), @fromDate='?' (DbType = DateTime), @toDate='?' (DbType = DateTime), @CreatedBy='?' (Size = 10), @CreatedOn='?' (DbType = DateTime), @CreatedBy_SessionId='?' (Size = 14), @CreatedBy_IP='?' (Size = 12), @UpdateBy='?' (Size = 11), @UpdatedOn='?' (DbType = DateTime), @UpdatedBy_SessionId='?' (Size = 14), @UpdatedBy_IP='?' (Size = 12)"], CommandType='Text', CommandTimeout='30']"
+""EXEC [usp_tbl_Transaction_7_OfficerPostingDetails_1_Insert] @Vc_Officer_Id, @orgCode, @designation, @placeOfPosting, @orgMinistry, @fromDate, @toDate, @CreatedBy, @CreatedOn, @CreatedBy_SessionId, @CreatedBy_IP, @UpdateBy, @UpdatedOn, @UpdatedBy_SessionId, @UpdatedBy_IP"
+2025-06-27 10:33:34.074 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-06-27 10:33:36.133 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 24151.9183ms
+2025-06-27 10:33:36.133 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:33:45.283 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 200 null "application/json; charset=utf-8" 33328.3226ms
+2025-06-27 10:41:51.471 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - "application/json" 618
+2025-06-27 10:41:51.474 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:41:51.477 +05:30 [Information] Route matched with "{action = \"AddOfficerPostingDetails\", controller = \"OfficerPostingDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerPostingDetails(VigilanceClearance.Application.DTOs.Requests.OfficerPostingDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerPostingDetailsController" ("VigilanceClearance.API").
+2025-06-27 10:41:51.484 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-06-27 10:41:51.484 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)" in 6.6774ms
+2025-06-27 10:41:51.485 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerPostingDetailsController.AddOfficerPostingDetails (VigilanceClearance.API)"'
+2025-06-27 10:41:51.485 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7191""""/api/OfficerPostingDetails/addOfficerPostingDetails""" - 400 null "application/problem+json; charset=utf-8" 14.7208ms
+2025-06-27 10:45:59.558 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-27 10:45:59.571 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 14.8576ms
+2025-06-27 10:45:59.585 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-27 10:45:59.585 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-27 10:45:59.586 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 1.1599ms
+2025-06-27 10:45:59.599 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.7017ms
+2025-06-27 10:45:59.867 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-27 10:45:59.877 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.9923ms

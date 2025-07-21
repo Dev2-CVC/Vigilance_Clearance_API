@@ -1,0 +1,47 @@
+2025-07-03 14:32:28.347 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 14:32:28.501 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-03 14:32:28.528 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-03 14:32:28.529 +05:30 [Information] Hosting environment: "Development"
+2025-07-03 14:32:28.529 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-03 14:32:28.715 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 214.8108ms
+2025-07-03 14:32:28.715 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-03 14:32:28.715 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-03 14:32:28.723 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.6674ms
+2025-07-03 14:32:28.752 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 37.3208ms
+2025-07-03 14:32:28.769 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-03 14:32:28.784 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 14.9493ms
+2025-07-03 14:32:46.727 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:32:46.945 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:32:46.949 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:32:46.957 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 230.5784ms
+2025-07-03 14:33:00.404 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:00.412 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:00.413 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:00.414 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 9.9959ms
+2025-07-03 14:33:01.185 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:01.192 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:01.193 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:01.193 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 8.511ms
+2025-07-03 14:33:01.709 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:01.710 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:01.710 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:01.711 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 1.9655ms
+2025-07-03 14:33:02.205 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:02.207 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:02.207 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:02.207 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 2.0817ms
+2025-07-03 14:33:02.754 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:02.755 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:02.755 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:02.756 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 1.5869ms
+2025-07-03 14:33:03.441 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - null null
+2025-07-03 14:33:03.442 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-03 14:33:03.442 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-03 14:33:03.443 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedDetailsGetById""?id=19" - 401 null null 1.6521ms

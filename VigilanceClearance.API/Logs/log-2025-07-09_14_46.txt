@@ -1,0 +1,56 @@
+2025-07-09 14:46:07.823 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-09 14:46:08.033 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-09 14:46:08.071 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-09 14:46:08.071 +05:30 [Information] Hosting environment: "Development"
+2025-07-09 14:46:08.071 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-09 14:46:08.864 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-09 14:46:08.864 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-09 14:46:08.864 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 838.0308ms
+2025-07-09 14:46:08.867 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 2.9415ms
+2025-07-09 14:46:08.910 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 45.7091ms
+2025-07-09 14:46:08.953 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-09 14:46:08.984 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 30.9596ms
+2025-07-09 14:46:52.672 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - "application/json" 469
+2025-07-09 14:46:52.947 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-09 14:46:52.950 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-09 14:46:52.952 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - 401 null null 280.1733ms
+2025-07-09 14:47:28.196 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 61
+2025-07-09 14:47:28.214 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-09 14:47:28.231 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-09 14:47:29.437 +05:30 [Information] Executed DbCommand ("62"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-09 14:47:29.649 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-09 14:47:29.684 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-09 14:47:29.691 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 1456.4756ms
+2025-07-09 14:47:29.691 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-09 14:47:29.697 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 1500.3753ms
+2025-07-09 14:48:47.709 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - "application/json" 455
+2025-07-09 14:48:47.750 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.OfficerDetailsController.AddOfficerDetails (VigilanceClearance.API)"'
+2025-07-09 14:48:47.757 +05:30 [Information] Route matched with "{action = \"AddOfficerDetails\", controller = \"OfficerDetails\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOfficerDetails(VigilanceClearance.Application.DTOs.Requests.OfficerDetailsInsert)" on controller "VigilanceClearance.API.Controllers.OfficerDetailsController" ("VigilanceClearance.API").
+2025-07-09 14:49:07.037 +05:30 [Information] Executed DbCommand ("24"ms) [Parameters=["@MasterReferenceID='?' (DbType = Int64), @Officer_Name='?' (Size = 4), @Officer_FatherName='?' (Size = 4), @Officer_DateOfBirth='?' (DbType = DateTime), @Officer_RetirementDate='?' (DbType = DateTime), @Officer_ServiceEntryDate='?' (DbType = DateTime), @Officer_Service='?' (Size = 5), @Officer_Other_Service='?' (Size = 5), @Officer_Batch_Year='?' (DbType = Int32), @Officer_Cadre='?' (Size = 4), @CreatedBy='?' (Size = 4), @CreatedBy_SessionId='?' (Size = 4), @CreatedBy_IP='?' (Size = 4)"], CommandType='Text', CommandTimeout='30']"
+""EXEC [usp_tbl_Master_Vc_1_OfficerDetails_1_Insert] 
+         
+                  @MasterReferenceID, 
+                  @Officer_Name, 
+                  @Officer_FatherName, 
+                  @Officer_DateOfBirth, 
+                  @Officer_RetirementDate, 
+                  @Officer_ServiceEntryDate, 
+                  @Officer_Service, 
+                  @Officer_Other_Service,
+                  @Officer_Batch_Year, 
+                  @Officer_Cadre, 
+                  @CreatedBy, 
+                  @CreatedBy_SessionId, 
+                  @CreatedBy_IP"
+2025-07-09 14:49:16.042 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-09 14:49:16.045 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.OfficerDetailsController.AddOfficerDetails (VigilanceClearance.API)" in 28287.6993ms
+2025-07-09 14:49:16.045 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.OfficerDetailsController.AddOfficerDetails (VigilanceClearance.API)"'
+2025-07-09 14:49:16.045 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/OfficerDetails/addOfficerDetails""" - 200 null "application/json; charset=utf-8" 28336.5096ms

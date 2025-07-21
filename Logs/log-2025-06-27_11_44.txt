@@ -1,0 +1,14 @@
+2025-06-27 11:44:46.912 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-27 11:44:47.109 +05:30 [Information] Now listening on: "https://localhost:7191"
+2025-06-27 11:44:47.110 +05:30 [Information] Now listening on: "http://localhost:5116"
+2025-06-27 11:44:47.144 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-27 11:44:47.145 +05:30 [Information] Hosting environment: "Development"
+2025-06-27 11:44:47.145 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-06-27 11:44:47.673 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - null null
+2025-06-27 11:44:47.876 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 198.6183ms
+2025-06-27 11:44:47.876 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-27 11:44:47.876 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - null null
+2025-06-27 11:44:47.881 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 5.3398ms
+2025-06-27 11:44:47.909 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 33.4417ms
+2025-06-27 11:44:47.939 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - null null
+2025-06-27 11:44:47.958 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7191""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 18.4482ms

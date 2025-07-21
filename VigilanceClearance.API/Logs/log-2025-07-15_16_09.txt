@@ -1,0 +1,6 @@
+2025-07-15 16:09:01.461 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 16:09:01.639 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-15 16:09:01.681 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-15 16:09:01.681 +05:30 [Information] Hosting environment: "Development"
+2025-07-15 16:09:01.681 +05:30 [Information] Content root path: "C:\Users\user\Desktop\VCSM Project\APICode\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-15 16:09:02.477 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 843.456ms

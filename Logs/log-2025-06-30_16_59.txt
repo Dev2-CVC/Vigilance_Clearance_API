@@ -1,0 +1,24 @@
+2025-06-30 16:59:26.683 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-30 16:59:26.847 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-06-30 16:59:26.893 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-30 16:59:26.893 +05:30 [Information] Hosting environment: "Development"
+2025-06-30 16:59:26.893 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-06-30 16:59:27.140 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-30 16:59:27.141 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-06-30 16:59:27.141 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 297.6843ms
+2025-06-30 16:59:27.144 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 6.5985ms
+2025-06-30 16:59:27.175 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 34.5524ms
+2025-06-30 16:59:27.205 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-06-30 16:59:27.224 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 18.5726ms
+2025-06-30 16:59:57.890 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-30 16:59:58.013 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-06-30 16:59:58.042 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-30 16:59:58.046 +05:30 [Information] Hosting environment: "Development"
+2025-06-30 16:59:58.047 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance27_6_2025\VigilanceClearance.API"
+2025-06-30 16:59:58.197 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 186.6759ms
+2025-06-30 16:59:58.201 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-06-30 16:59:58.203 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-06-30 16:59:58.206 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.3909ms
+2025-06-30 16:59:58.245 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 43.3982ms
+2025-06-30 16:59:58.265 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-06-30 16:59:58.285 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 19.675ms

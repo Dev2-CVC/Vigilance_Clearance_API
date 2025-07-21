@@ -1,0 +1,19 @@
+2025-07-01 16:17:06.669 +05:30 [Information] User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-01 16:17:06.806 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-01 16:17:06.816 +05:30 [Information] Hosting environment: "Development"
+2025-07-01 16:17:06.816 +05:30 [Information] Content root path: "F:\VigilanceClearance30_June_2025\VigilanceClearance.API"
+2025-07-01 16:17:06.833 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-01 16:17:08.168 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-01 16:17:08.168 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-01 16:17:08.169 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1339.7926ms
+2025-07-01 16:17:08.173 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.7621ms
+2025-07-01 16:17:08.209 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.2031ms
+2025-07-01 16:17:09.041 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-01 16:17:09.181 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 139.3484ms
+2025-07-01 16:17:20.175 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedForGetById""?UserName=CBI" - null null
+2025-07-01 16:17:20.697 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-07-01 16:17:20.719 +05:30 [Information] Route matched with "{action = \"VcReferenceReceivedForGetById\", controller = \"VcReferenceReceivedFor\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VcReferenceReceivedForGetById(Int64, System.String)" on controller "VigilanceClearance.API.Controllers.VcReferenceReceivedForController" ("VigilanceClearance.API").
+2025-07-01 16:17:22.578 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-01 16:17:22.618 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)" in 1897.0592ms
+2025-07-01 16:17:22.619 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.VcReferenceReceivedForController.VcReferenceReceivedForGetById (VigilanceClearance.API)"'
+2025-07-01 16:17:22.630 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedForGetById""?UserName=CBI" - 200 null "application/json; charset=utf-8" 2455.2953ms

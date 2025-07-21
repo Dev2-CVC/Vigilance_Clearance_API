@@ -1,0 +1,17 @@
+2025-07-02 12:08:51.480 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-02 12:08:51.629 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-02 12:08:51.671 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-02 12:08:51.671 +05:30 [Information] Hosting environment: "Development"
+2025-07-02 12:08:51.671 +05:30 [Information] Content root path: "C:\Users\HP\Documents\VigilanceClearance1_7__2025\VigilanceClearance.API"
+2025-07-02 12:08:51.868 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-02 12:08:51.868 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 242.7871ms
+2025-07-02 12:08:51.868 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-02 12:08:51.871 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 2.7875ms
+2025-07-02 12:08:51.902 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 33.7409ms
+2025-07-02 12:08:51.922 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-02 12:08:51.936 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 13.3965ms
+2025-07-02 12:09:33.541 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedForGetById""?id=0&UserName=chandan%40gmail.com" - null null
+2025-07-02 12:09:33.769 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-02 12:09:33.772 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-02 12:09:33.776 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/VcReferenceReceivedFor/VcReferenceReceivedForGetById""?id=0&UserName=chandan%40gmail.com" - 401 null null 235.0734ms

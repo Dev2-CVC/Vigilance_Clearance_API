@@ -1,0 +1,18 @@
+TABLE : tbl_Transaction_FeebbackOf_CBI
+
+=================================================
+id	bigint	Unchecked
+officerId	bigint	Checked
+FeebbackOf_CBI	nvarchar(MAX)	Checked
+CreatedBy	nvarchar(MAX)	Checked
+CreatedOn	datetime	Checked
+CreatedBy_SessionId	nvarchar(MAX)	Checked
+CreatedBy_IP	nvarchar(50)	Checked
+UpdateBy	nvarchar(MAX)	Checked
+UpdatedOn	datetime	Checked
+UpdatedBy_SessionId	nvarchar(MAX)	Checked
+UpdatedBy_IP	nvarchar(MAX)	Checked
+
+==========================================
+WRITE CRUD PROCEDURE SEPARATELY WITH ROLLBACK OPTION 
+procedure name usp_tablename_1_Insert/2_Update/3_Delete/4_Getbyid/5_Getall
