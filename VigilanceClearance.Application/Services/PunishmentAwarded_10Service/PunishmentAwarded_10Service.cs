@@ -36,6 +36,7 @@ namespace VigilanceClearance.Application.Services.PunishmentAwarded_10Service
             {
                 var parameters = new[]
                 {
+                     new SqlParameter("@MasterReferenceId", punishmentAwardedModel.MasterReferenceId),
                       new SqlParameter("@officerId", punishmentAwardedModel.officerId),
                       new SqlParameter("@punishmentAwarded", punishmentAwardedModel.punishmentAwarded),
                       new SqlParameter("@punishmentDetails", punishmentAwardedModel.punishmentDetails),
@@ -51,6 +52,7 @@ namespace VigilanceClearance.Application.Services.PunishmentAwarded_10Service
 
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
                               @"EXEC usp_tbl_Transaction_10_PunishmentAwarded_1_Insert 
+                               @MasterReferenceId,
                                @officerId, 
                                @punishmentAwarded, 
                                @punishmentDetails, 
@@ -104,7 +106,7 @@ namespace VigilanceClearance.Application.Services.PunishmentAwarded_10Service
                     parameters
                 );
 
-                //var entity = result.FirstOrDefault();
+               
                 var entity = result;
 
                 if (entity == null)

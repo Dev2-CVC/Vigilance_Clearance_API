@@ -1,0 +1,61 @@
+2025-07-21 15:28:29.997 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-21 15:28:30.171 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-21 15:28:30.206 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-21 15:28:30.213 +05:30 [Information] Hosting environment: "Development"
+2025-07-21 15:28:30.214 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-21 15:28:30.406 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-21 15:28:30.407 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-21 15:28:30.407 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 240.2131ms
+2025-07-21 15:28:30.411 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 3.9638ms
+2025-07-21 15:28:30.439 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 32.6435ms
+2025-07-21 15:28:30.461 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-21 15:28:30.479 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 18.7042ms
+2025-07-21 15:29:02.786 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-21 15:29:02.794 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 8.2809ms
+2025-07-21 15:29:02.806 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-21 15:29:02.815 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-21 15:29:02.819 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 3.4378ms
+2025-07-21 15:29:02.828 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 22.211ms
+2025-07-21 15:29:02.847 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-21 15:29:02.865 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 18.2437ms
+2025-07-21 15:29:09.343 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 278
+2025-07-21 15:29:09.522 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-21 15:29:09.542 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-21 15:29:21.200 +05:30 [Error] Failed executing DbCommand ("61"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?' (Size = 6), @detailsOfTheCase='?' (Size = 6), @presentStatusOftheCase='?' (Size = 6), @addtionalRemarks='?' (Size = 6), @CreatedBy='?' (Size = 6), @CreatedBy_SessionId='?' (Size = 6), @CreatedBy_IP='?' (Size = 6)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert21
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-21 15:29:43.353 +05:30 [Error] Failed to Insert usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert21'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending_13Service.ComplaintWithVigilanceAnglePending_13Service.insertComplaintWithVigilanceAnglePending(ComplaintWithVigilanceAnglePending complaintWithVigilanceAnglePendingModel)
+ClientConnectionId:da615b73-3026-4da7-89bb-6de3bc56f25d
+Error Number:2812,State:62,Class:16
+2025-07-21 15:29:44.340 +05:30 [Information] Executed DbCommand ("31"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"

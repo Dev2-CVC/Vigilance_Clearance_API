@@ -9,6 +9,8 @@ namespace VigilanceClearance.Application.DTOs.Requests
 {
     public class PunishmentAwarded
     {
+        [Required(ErrorMessage = "Please Enter MasterReference Id")]
+        public long? MasterReferenceId { get; set; }
         [Required(ErrorMessage = "OfficerId is required")]
         public long? officerId { get; set; }
         public string? punishmentAwarded { get; set; }

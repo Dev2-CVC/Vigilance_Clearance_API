@@ -36,6 +36,7 @@ namespace VigilanceClearance.Application.Services.DisciplinaryCriminalProceeding
             {
                 var parameters = new[]
                 {
+                     new SqlParameter("@MasterReferenceId", disciplinaryCriminalProceedingsModel.MasterReferenceId),
                       new SqlParameter("@officerId", disciplinaryCriminalProceedingsModel.officerId),
                       new SqlParameter("@whether_DisciplinaryCriminalProceedingsPending", disciplinaryCriminalProceedingsModel.whether_DisciplinaryCriminalProceedingsPending),
                       new SqlParameter("@whether_Suspended", disciplinaryCriminalProceedingsModel.whether_Suspended),
@@ -53,6 +54,7 @@ namespace VigilanceClearance.Application.Services.DisciplinaryCriminalProceeding
 
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
                               @"EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId,
                                @officerId, 
                                @whether_DisciplinaryCriminalProceedingsPending, 
                                @whether_Suspended, 

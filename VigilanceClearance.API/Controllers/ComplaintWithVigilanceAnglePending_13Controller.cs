@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using VigilanceClearance.Application.Common.Helpers;
 using VigilanceClearance.Application.DTOs.Requests;
 using VigilanceClearance.Application.Interfaces;
 using VigilanceClearance.Application.Interfaces.ActionContemplatedAgainstTheOfficer_12Interface;
@@ -37,6 +38,7 @@ namespace VigilanceClearance.API.Controllers
 
                 return Ok(Response);
             }
+
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Failed to load IntegrityAgreedOrDoubtful data");
@@ -44,7 +46,7 @@ namespace VigilanceClearance.API.Controllers
                 return StatusCode(500, "Error");
             }
         }
-
+     
         [HttpGet]
         [Route("getComplaintWithVigilanceAnglePendinglist")]
         public async Task<IActionResult> GetComplaintWithVigilanceAnglePendinglist(long id)

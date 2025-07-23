@@ -1,0 +1,30 @@
+2025-07-22 11:33:07.009 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 11:33:07.228 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 11:33:07.257 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-22 11:33:07.257 +05:30 [Information] Hosting environment: "Development"
+2025-07-22 11:33:07.258 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-22 11:33:07.453 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 11:33:07.454 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 11:33:07.454 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 227.6018ms
+2025-07-22 11:33:07.461 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.7473ms
+2025-07-22 11:33:07.488 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 35.0465ms
+2025-07-22 11:33:07.511 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 11:33:07.534 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.3352ms
+2025-07-22 11:33:34.710 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:33:34.930 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:33:34.956 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:33:39.872 +05:30 [Information] Executed DbCommand ("70"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?' (Size = 2), @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?' (Size = 41), @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:33:43.745 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:33:43.749 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)" in 8791.2329ms
+2025-07-22 11:33:43.750 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:33:43.758 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - 200 null "application/json; charset=utf-8" 9048.091ms

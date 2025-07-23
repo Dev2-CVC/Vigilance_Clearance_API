@@ -10,6 +10,8 @@ namespace VigilanceClearance.Application.DTOs.Requests
 {
     public class AllegationOfMisconductExamined
     {
+        [Required(ErrorMessage = "Please Enter MasterReference Id")]
+        public long? MasterReferenceId { get; set; }
         [Required(ErrorMessage = "OfficerId is required")]
         public long? officerId { get; set; }
         public string? vigilanceAngleExamined { get; set; }
