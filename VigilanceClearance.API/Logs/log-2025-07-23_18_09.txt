@@ -1,0 +1,61 @@
+2025-07-23 18:09:20.792 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 18:09:21.017 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-23 18:09:21.078 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-23 18:09:21.078 +05:30 [Information] Hosting environment: "Development"
+2025-07-23 18:09:21.078 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-23 18:09:22.640 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1626.8502ms
+2025-07-23 18:09:22.642 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-23 18:09:22.643 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-23 18:09:22.652 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 8.076ms
+2025-07-23 18:09:22.760 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 117.6412ms
+2025-07-23 18:09:22.795 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-23 18:09:22.847 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 52.2922ms
+2025-07-23 18:10:07.597 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/DealingHand/ReferencesPendingWithDealingHand""?branch=7" - null null
+2025-07-23 18:10:08.362 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-23 18:10:08.366 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-23 18:10:08.369 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/DealingHand/ReferencesPendingWithDealingHand""?branch=7" - 401 null null 771.6597ms
+2025-07-23 18:10:28.910 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 59
+2025-07-23 18:10:28.937 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-23 18:10:28.964 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-23 18:10:31.431 +05:30 [Information] Executed DbCommand ("134"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-23 18:10:31.715 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-23 18:10:31.793 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-23 18:10:31.801 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 2833.2279ms
+2025-07-23 18:10:31.802 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-23 18:10:31.816 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 2905.8803ms
+2025-07-23 18:10:33.299 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 59
+2025-07-23 18:10:33.305 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-23 18:10:33.305 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-23 18:10:33.388 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-23 18:10:33.490 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-23 18:10:33.491 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-23 18:10:33.492 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 186.252ms
+2025-07-23 18:10:33.492 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-23 18:10:33.493 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 193.9403ms
+2025-07-23 18:10:49.269 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/DealingHand/ReferencesPendingWithDealingHand""?branch=7" - null null
+2025-07-23 18:10:49.317 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DealingHandController.ReferencesPendingWithDealingHand (VigilanceClearance.API)"'
+2025-07-23 18:10:49.322 +05:30 [Information] Route matched with "{action = \"ReferencesPendingWithDealingHand\", controller = \"DealingHand\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReferencesPendingWithDealingHand(System.String)" on controller "VigilanceClearance.API.Controllers.DealingHandController" ("VigilanceClearance.API").
+2025-07-23 18:10:49.326 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DealingHandController.ReferencesPendingWithDealingHand (VigilanceClearance.API)" in 3.3765ms
+2025-07-23 18:10:49.326 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DealingHandController.ReferencesPendingWithDealingHand (VigilanceClearance.API)"'
+2025-07-23 18:10:50.000 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-23 18:10:50.031 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/DealingHand/ReferencesPendingWithDealingHand""?branch=7" - 500 null null 764.0734ms
