@@ -78,6 +78,7 @@ namespace VigilanceClearance.Application.Services.AllegationOfMisconductExamined
             {
                 var parameters = new[]
                 {
+                     new SqlParameter("@MasterReferenceId", AllegationOfMisconductExaminedModel.MasterReferenceId),
                       new SqlParameter("@officerId", AllegationOfMisconductExaminedModel.officerId),
                       new SqlParameter("@vigilanceAngleExamined", AllegationOfMisconductExaminedModel.vigilanceAngleExamined),
                       new SqlParameter("@caseDetails", AllegationOfMisconductExaminedModel.caseDetails),
@@ -92,6 +93,7 @@ namespace VigilanceClearance.Application.Services.AllegationOfMisconductExamined
 
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
                               @"EXEC usp_tbl_Transaction_9_AllegationOfMisconductExamined_1_Insert 
+                               @MasterReferenceId,
                                @officerId, 
                                @vigilanceAngleExamined, 
                                @caseDetails, 

@@ -1,0 +1,65 @@
+2025-07-21 15:04:18.025 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-21 15:04:18.171 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-21 15:04:18.199 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-21 15:04:18.205 +05:30 [Information] Hosting environment: "Development"
+2025-07-21 15:04:18.205 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-21 15:04:18.403 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 235.8996ms
+2025-07-21 15:04:18.407 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-21 15:04:18.415 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-21 15:04:18.420 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 9.9003ms
+2025-07-21 15:04:18.451 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 33.9645ms
+2025-07-21 15:04:18.471 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-21 15:04:18.495 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.7337ms
+2025-07-21 15:04:28.684 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13""" - "application/json" 278
+2025-07-21 15:04:28.800 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-21 15:04:28.811 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-21 15:04:53.570 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-21 15:04:53.695 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-21 15:04:53.723 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-21 15:04:53.724 +05:30 [Information] Hosting environment: "Development"
+2025-07-21 15:04:53.724 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-21 15:04:53.904 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 213.334ms
+2025-07-21 15:04:53.905 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-21 15:04:53.907 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-21 15:04:53.909 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.6118ms
+2025-07-21 15:04:53.943 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 36.5746ms
+2025-07-21 15:04:53.969 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-21 15:04:53.989 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 19.866ms
+2025-07-21 15:05:03.867 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 420
+2025-07-21 15:05:04.120 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-21 15:05:04.145 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-21 15:05:13.651 +05:30 [Error] Failed executing DbCommand ("65"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 6), @whether_Suspended='?' (Size = 6), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 6), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 6), @presentStatusOftheCase='?' (Size = 6), @CreatedBy='?' (Size = 6), @CreatedBy_SessionId='?' (Size = 6), @CreatedBy_IP='?' (Size = 6)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-21 15:05:13.678 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@officerId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+ClientConnectionId:57029d9f-cc4a-468d-9bca-86534fc59792
+Error Number:102,State:1,Class:15

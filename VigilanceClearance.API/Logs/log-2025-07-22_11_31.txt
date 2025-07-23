@@ -1,0 +1,26 @@
+2025-07-22 11:31:36.226 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 11:31:36.369 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 11:31:36.422 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-22 11:31:36.423 +05:30 [Information] Hosting environment: "Development"
+2025-07-22 11:31:36.423 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-22 11:31:36.642 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 279.8537ms
+2025-07-22 11:31:36.645 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 11:31:36.645 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 11:31:36.650 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.1131ms
+2025-07-22 11:31:36.692 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 47.1413ms
+2025-07-22 11:31:36.792 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 11:31:36.823 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 30.2428ms
+2025-07-22 11:31:50.199 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:31:50.425 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:31:50.451 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:32:08.547 +05:30 [Error] Failed executing DbCommand ("29"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?' (Size = 2), @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?', @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"

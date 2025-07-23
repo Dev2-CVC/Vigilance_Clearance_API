@@ -1,0 +1,40 @@
+2025-07-22 15:33:09.297 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 15:33:09.452 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 15:33:09.483 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-22 15:33:09.484 +05:30 [Information] Hosting environment: "Development"
+2025-07-22 15:33:09.484 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-22 15:33:09.678 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 15:33:09.678 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 231.1441ms
+2025-07-22 15:33:09.678 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 15:33:09.683 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 4.6677ms
+2025-07-22 15:33:09.709 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 30.8092ms
+2025-07-22 15:33:09.738 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 15:33:09.758 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 20.4587ms
+2025-07-22 15:41:42.553 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/Ministry/GetReferenceListPendingWithMinistryApprover""?MinCode=M79&Role=MINISTRY_APPROVER" - null null
+2025-07-22 15:41:42.811 +05:30 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-07-22 15:41:42.815 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-07-22 15:41:42.817 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/Ministry/GetReferenceListPendingWithMinistryApprover""?MinCode=M79&Role=MINISTRY_APPROVER" - 401 null null 271.686ms
+2025-07-22 15:42:03.054 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - "application/json" 59
+2025-07-22 15:42:03.087 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-22 15:42:03.116 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(VigilanceClearance.Application.DTOs.Model.LoginDto)" on controller "VigilanceClearance.API.Controllers.AuthController" ("VigilanceClearance.API").
+2025-07-22 15:42:04.731 +05:30 [Information] Executed DbCommand ("77"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserProfile]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+2025-07-22 15:42:05.036 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+2025-07-22 15:42:05.163 +05:30 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-07-22 15:42:05.171 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)" in 2051.5477ms
+2025-07-22 15:42:05.171 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AuthController.Login (VigilanceClearance.API)"'
+2025-07-22 15:42:05.179 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 2126.8481ms
+2025-07-22 15:42:20.842 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/api/Ministry/GetReferenceListPendingWithMinistryApprover""?MinCode=M79&Role=MINISTRY_APPROVER" - null null
+2025-07-22 15:42:20.902 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.MinistryController.GetReferenceListPendingWith_MinistryApprover (VigilanceClearance.API)"'
+2025-07-22 15:42:20.908 +05:30 [Information] Route matched with "{action = \"GetReferenceListPendingWith_MinistryApprover\", controller = \"Ministry\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReferenceListPendingWith_MinistryApprover(System.String, System.String)" on controller "VigilanceClearance.API.Controllers.MinistryController" ("VigilanceClearance.API").
+2025-07-22 15:42:23.686 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 15:42:23.719 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.MinistryController.GetReferenceListPendingWith_MinistryApprover (VigilanceClearance.API)" in 2810.9277ms
+2025-07-22 15:42:23.719 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.MinistryController.GetReferenceListPendingWith_MinistryApprover (VigilanceClearance.API)"'
+2025-07-22 15:42:23.719 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/api/Ministry/GetReferenceListPendingWithMinistryApprover""?MinCode=M79&Role=MINISTRY_APPROVER" - 200 null "application/json; charset=utf-8" 2877.2328ms

@@ -1,0 +1,589 @@
+2025-07-22 10:19:02.524 +05:30 [Information] User profile is available. Using '"C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 10:19:02.708 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 10:19:02.752 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2025-07-22 10:19:02.755 +05:30 [Information] Hosting environment: "Development"
+2025-07-22 10:19:02.755 +05:30 [Information] Content root path: "D:\Git\Vigilance_Clearance_API\VigilanceClearance.API"
+2025-07-22 10:19:04.093 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 10:19:04.093 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 10:19:04.093 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1387.8787ms
+2025-07-22 10:19:04.100 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 3.9542ms
+2025-07-22 10:19:04.148 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 55.5737ms
+2025-07-22 10:19:04.167 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 10:19:04.217 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 49.4899ms
+2025-07-22 10:30:25.375 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/IntegrityAgreedOrDoubtful/IntegrityAgreedOrDoubtful""" - "application/json" 379
+2025-07-22 10:30:26.160 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)"'
+2025-07-22 10:30:26.184 +05:30 [Information] Route matched with "{action = \"AddIntegrityAgreedOrDoubtful\", controller = \"IntegrityAgreedOrDoubtful\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddIntegrityAgreedOrDoubtful(VigilanceClearance.Application.DTOs.Requests.IntegrityAgreedOrDoubtfulInsert)" on controller "VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController" ("VigilanceClearance.API").
+2025-07-22 10:30:28.515 +05:30 [Information] Executed DbCommand ("123"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @enteredInTheList='?' (Size = 8), @dateOfEntryInTheList='?' (DbType = DateTime), @removedFromTheList='?' (Size = 10), @DateOfRemovalFromTheList='?' (Size = 24), @CreatedBy='?' (Size = 10), @CreatedOn='?' (DbType = DateTime), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 12)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_8_IntegrityAgreedOrDoubtful_1_Insert 
+          @MasterReferenceId,
+        @officerId, 
+        @enteredInTheList, 
+        @dateOfEntryInTheList, 
+        @removedFromTheList, 
+        @DateOfRemovalFromTheList, 
+        @CreatedBy, 
+        @CreatedOn, 
+        @CreatedBy_SessionId, 
+        @CreatedBy_IP"
+2025-07-22 10:30:28.539 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:30:28.553 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)" in 2362.256ms
+2025-07-22 10:30:28.555 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.IntegrityAgreedOrDoubtfulController.AddIntegrityAgreedOrDoubtful (VigilanceClearance.API)"'
+2025-07-22 10:30:28.566 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/IntegrityAgreedOrDoubtful/IntegrityAgreedOrDoubtful""" - 200 null "application/json; charset=utf-8" 3191.8651ms
+2025-07-22 10:41:00.635 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/AllegationOfMisconductExamined_9/AddAllegationOfMisconductExamined""" - "application/json" 668
+2025-07-22 10:41:00.649 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.AllegationOfMisconductExamined_9Controller.AddAllegationOfMisconductExamined (VigilanceClearance.API)"'
+2025-07-22 10:41:00.654 +05:30 [Information] Route matched with "{action = \"AddAllegationOfMisconductExamined\", controller = \"AllegationOfMisconductExamined_9\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddAllegationOfMisconductExamined(VigilanceClearance.Application.DTOs.Requests.AllegationOfMisconductExamined)" on controller "VigilanceClearance.API.Controllers.AllegationOfMisconductExamined_9Controller" ("VigilanceClearance.API").
+2025-07-22 10:41:08.692 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @vigilanceAngleExamined='?' (Size = 48), @caseDetails='?' (Size = 101), @presentStatusOfTheCase='?' (Size = 25), @actionrecommendedOptions='?' (Size = 33), @actionRecommendedDetails='?' (Size = 107), @CreatedBy='?' (Size = 20), @CreatedOn='?' (DbType = DateTime), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 9)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_9_AllegationOfMisconductExamined_1_Insert 
+                               @MasterReferenceId,
+                               @officerId, 
+                               @vigilanceAngleExamined, 
+                               @caseDetails, 
+                               @presentStatusOfTheCase, 
+                               @actionrecommendedOptions, 
+                               @actionRecommendedDetails, 
+                               @CreatedBy, 
+                               @CreatedOn, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:41:08.692 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:41:08.693 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.AllegationOfMisconductExamined_9Controller.AddAllegationOfMisconductExamined (VigilanceClearance.API)" in 8038.716ms
+2025-07-22 10:41:08.693 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.AllegationOfMisconductExamined_9Controller.AddAllegationOfMisconductExamined (VigilanceClearance.API)"'
+2025-07-22 10:41:08.693 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/AllegationOfMisconductExamined_9/AddAllegationOfMisconductExamined""" - 200 null "application/json; charset=utf-8" 8057.951ms
+2025-07-22 10:44:40.862 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - "application/json" 664
+2025-07-22 10:44:40.867 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-22 10:44:40.879 +05:30 [Information] Route matched with "{action = \"AddPunishmentAwarded\", controller = \"PunishmentAwarded_10\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPunishmentAwarded(VigilanceClearance.Application.DTOs.Requests.PunishmentAwarded)" on controller "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller" ("VigilanceClearance.API").
+2025-07-22 10:44:40.892 +05:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-07-22 10:44:40.922 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)" in 42.714ms
+2025-07-22 10:44:40.922 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-22 10:44:40.922 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - 400 null "application/problem+json; charset=utf-8" 60.0924ms
+2025-07-22 10:44:48.035 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - "application/json" 663
+2025-07-22 10:44:48.037 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-22 10:44:48.037 +05:30 [Information] Route matched with "{action = \"AddPunishmentAwarded\", controller = \"PunishmentAwarded_10\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPunishmentAwarded(VigilanceClearance.Application.DTOs.Requests.PunishmentAwarded)" on controller "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller" ("VigilanceClearance.API").
+2025-07-22 10:44:50.017 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @punishmentAwarded='?' (Size = 35), @punishmentDetails='?' (Size = 108), @punishmentFromDate='?' (DbType = DateTime), @punishmentToDate='?' (DbType = DateTime), @checkName_FromDate='?' (DbType = DateTime), @checkName_ToDate='?' (DbType = DateTime), @additionalRemarks_IfAny='?' (Size = 63), @CreatedBy='?' (Size = 25), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_10_PunishmentAwarded_1_Insert 
+                               @MasterReferenceId,
+                               @officerId, 
+                               @punishmentAwarded, 
+                               @punishmentDetails, 
+                               @punishmentFromDate, 
+                               @punishmentToDate, 
+                               @checkName_FromDate, 
+                               @checkName_ToDate, 
+                               @additionalRemarks_IfAny, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:44:50.017 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:44:50.018 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)" in 1980.4288ms
+2025-07-22 10:44:50.018 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.PunishmentAwarded_10Controller.AddPunishmentAwarded (VigilanceClearance.API)"'
+2025-07-22 10:44:50.018 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/PunishmentAwarded_10/AddPunishmentAwarded""" - 200 null "application/json; charset=utf-8" 1983.7988ms
+2025-07-22 10:49:06.019 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 589
+2025-07-22 10:49:06.021 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:49:06.033 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:49:07.709 +05:30 [Error] Failed executing DbCommand ("8"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:49:07.733 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlTypes.SqlDateTime..ctor(DateTime value)
+   at Microsoft.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at Microsoft.Data.SqlClient.TdsParser.WriteUnterminatedValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.TDSExecuteRPCAddParameter(TdsParserStateObject stateObj, SqlParameter param, MetaType mt, Byte options, SqlCommand command, Boolean isAnonymous)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryInternal(CommandBehavior behavior, AsyncCallback callback, Object stateObject, Int32 timeout, Boolean inRetry, Boolean asyncWrite)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryAsync(AsyncCallback callback, Object stateObject)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_0(AsyncCallback callback, Object stateObject)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory`1.FromAsync(Func`3 beginMethod, Func`2 endMethod, Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+2025-07-22 10:49:08.010 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:49:08.012 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 1979.1598ms
+2025-07-22 10:49:08.012 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:49:08.012 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 1993.7067ms
+2025-07-22 10:49:50.336 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 589
+2025-07-22 10:49:50.338 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:49:50.338 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:49:55.289 +05:30 [Error] Failed executing DbCommand ("3"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:49:55.301 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlTypes.SqlDateTime..ctor(DateTime value)
+   at Microsoft.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at Microsoft.Data.SqlClient.TdsParser.WriteUnterminatedValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.TDSExecuteRPCAddParameter(TdsParserStateObject stateObj, SqlParameter param, MetaType mt, Byte options, SqlCommand command, Boolean isAnonymous)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryInternal(CommandBehavior behavior, AsyncCallback callback, Object stateObject, Int32 timeout, Boolean inRetry, Boolean asyncWrite)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryAsync(AsyncCallback callback, Object stateObject)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_0(AsyncCallback callback, Object stateObject)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory`1.FromAsync(Func`3 beginMethod, Func`2 endMethod, Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+2025-07-22 10:49:55.311 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:49:55.312 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 4973.5181ms
+2025-07-22 10:49:55.312 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:49:55.312 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 4980.5239ms
+2025-07-22 10:50:35.437 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 589
+2025-07-22 10:50:35.437 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:50:35.437 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:50:41.388 +05:30 [Error] Failed executing DbCommand ("6"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:52:05.420 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlTypes.SqlDateTime..ctor(DateTime value)
+   at Microsoft.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at Microsoft.Data.SqlClient.TdsParser.WriteUnterminatedValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.TDSExecuteRPCAddParameter(TdsParserStateObject stateObj, SqlParameter param, MetaType mt, Byte options, SqlCommand command, Boolean isAnonymous)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryInternal(CommandBehavior behavior, AsyncCallback callback, Object stateObject, Int32 timeout, Boolean inRetry, Boolean asyncWrite)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQueryAsync(AsyncCallback callback, Object stateObject)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_0(AsyncCallback callback, Object stateObject)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory`1.FromAsync(Func`3 beginMethod, Func`2 endMethod, Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+2025-07-22 10:52:05.442 +05:30 [Information] Executed DbCommand ("14"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 10:52:05.442 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:52:05.443 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 90005.1193ms
+2025-07-22 10:52:05.443 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:52:05.443 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 90006.261ms
+2025-07-22 10:52:20.143 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 566
+2025-07-22 10:52:20.144 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:52:20.144 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:52:21.797 +05:30 [Error] Failed executing DbCommand ("6"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?', @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:52:21.810 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@officerId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+ClientConnectionId:f9a2b4b5-3e87-4092-82b2-e427b7254e3c
+Error Number:102,State:1,Class:15
+2025-07-22 10:52:21.814 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:52:21.815 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 1671.0353ms
+2025-07-22 10:52:21.815 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:52:21.815 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 1672.0142ms
+2025-07-22 10:52:25.918 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 566
+2025-07-22 10:52:25.918 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:52:25.918 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:52:29.659 +05:30 [Error] Failed executing DbCommand ("19"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?', @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 10:52:58.386 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@officerId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel) in D:\Git\Vigilance_Clearance_API\VigilanceClearance.Application\Services\DisciplinaryCriminalProceedings_11Service\DisciplinaryCriminalProceedings_11Service.cs:line 55
+ClientConnectionId:f9a2b4b5-3e87-4092-82b2-e427b7254e3c
+Error Number:102,State:1,Class:15
+2025-07-22 10:52:58.410 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 10:52:58.411 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 10:52:58.411 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 32493.0105ms
+2025-07-22 10:52:58.411 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:52:58.412 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 32494.2023ms
+2025-07-22 10:53:00.293 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 566
+2025-07-22 10:53:00.294 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 10:53:00.294 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 10:53:06.686 +05:30 [Error] Failed executing DbCommand ("21"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 3), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?', @detailsOf_Case='?' (Size = 91), @presentStatusOftheCase='?' (Size = 68), @CreatedBy='?' (Size = 19), @CreatedBy_SessionId='?' (Size = 15), @CreatedBy_IP='?' (Size = 13)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:08:38.901 +05:30 [Error] Failed to Insert usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@officerId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service.DisciplinaryCriminalProceedings_11Service.insertDisciplinaryCriminalProceedings(DisciplinaryCriminalProceedings disciplinaryCriminalProceedingsModel)
+ClientConnectionId:f9a2b4b5-3e87-4092-82b2-e427b7254e3c
+Error Number:102,State:1,Class:15
+2025-07-22 11:08:38.922 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 11:08:38.922 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:08:38.923 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 938629.3188ms
+2025-07-22 11:08:38.923 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 11:08:38.923 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 938630.2475ms
+2025-07-22 11:08:39.891 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 11:08:39.902 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 12.0617ms
+2025-07-22 11:08:39.917 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 11:08:39.918 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 11:08:39.918 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.8677ms
+2025-07-22 11:08:39.929 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 10.9629ms
+2025-07-22 11:08:40.038 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 11:08:40.056 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 18.013ms
+2025-07-22 11:11:43.668 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - "application/json" 547
+2025-07-22 11:11:43.670 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 11:11:43.717 +05:30 [Information] Route matched with "{action = \"AddDisciplinaryCriminalProceedings\", controller = \"DisciplinaryCriminalProceedings_11\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddDisciplinaryCriminalProceedings(VigilanceClearance.Application.DTOs.Requests.DisciplinaryCriminalProceedings)" on controller "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller" ("VigilanceClearance.API").
+2025-07-22 11:11:46.503 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_DisciplinaryCriminalProceedingsPending='?' (Size = 3), @whether_Suspended='?' (Size = 2), @suspensionDate='?' (DbType = DateTime), @whetherRevoked='?' (Size = 2), @revocationDate='?' (DbType = DateTime), @detailsOf_Case='?' (Size = 76), @presentStatusOftheCase='?' (Size = 49), @CreatedBy='?' (Size = 15), @CreatedBy_SessionId='?' (Size = 14), @CreatedBy_IP='?' (Size = 12)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_11_DisciplinaryCriminalProceedings_1_Insert 
+                               @MasterReferenceId,
+                               @officerId, 
+                               @whether_DisciplinaryCriminalProceedingsPending, 
+                               @whether_Suspended, 
+                               @suspensionDate, 
+                               @whetherRevoked, 
+                               @revocationDate, 
+                               @detailsOf_Case, 
+                               @presentStatusOftheCase, 
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:11:46.504 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:11:46.506 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)" in 2788.7222ms
+2025-07-22 11:11:46.506 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.DisciplinaryCriminalProceedings_11Controller.AddDisciplinaryCriminalProceedings (VigilanceClearance.API)"'
+2025-07-22 11:11:46.506 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/DisciplinaryCriminalProceedings_11/addDisciplinaryCriminalProceedings""" - 200 null "application/json; charset=utf-8" 2838.2928ms
+2025-07-22 11:16:41.083 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ActionContemplatedAgainstTheOfficer_12/addActionContemplatedAgainstTheOfficer""" - "application/json" 354
+2025-07-22 11:16:41.088 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ActionContemplatedAgainstTheOfficer_12Controller.AddActionContemplatedAgainstTheOfficer (VigilanceClearance.API)"'
+2025-07-22 11:16:41.100 +05:30 [Information] Route matched with "{action = \"AddActionContemplatedAgainstTheOfficer\", controller = \"ActionContemplatedAgainstTheOfficer_12\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddActionContemplatedAgainstTheOfficer(VigilanceClearance.Application.DTOs.Requests.ActionContemplatedAgainstTheOfficer)" on controller "VigilanceClearance.API.Controllers.ActionContemplatedAgainstTheOfficer_12Controller" ("VigilanceClearance.API").
+2025-07-22 11:16:42.779 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_CaseContemplated='?' (Size = 3), @detailsOfTheCase='?' (Size = 58), @presentStatusOftheCase='?' (Size = 50), @CreatedBy='?' (Size = 13), @CreatedBy_SessionId='?' (Size = 14), @CreatedBy_IP='?' (Size = 9)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+                               @MasterReferenceId,
+                               @officerId, 
+                               @whether_CaseContemplated, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase,                                                              
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:16:42.779 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:16:42.780 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ActionContemplatedAgainstTheOfficer_12Controller.AddActionContemplatedAgainstTheOfficer (VigilanceClearance.API)" in 1679.6485ms
+2025-07-22 11:16:42.780 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ActionContemplatedAgainstTheOfficer_12Controller.AddActionContemplatedAgainstTheOfficer (VigilanceClearance.API)"'
+2025-07-22 11:16:42.781 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ActionContemplatedAgainstTheOfficer_12/addActionContemplatedAgainstTheOfficer""" - 200 null "application/json; charset=utf-8" 1697.8178ms
+2025-07-22 11:18:21.203 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:18:21.205 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:18:21.213 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:18:22.944 +05:30 [Error] Failed executing DbCommand ("9"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?', @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?', @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:18:22.957 +05:30 [Error] Failed to Insert usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@MasterReferenceId bigint,@officerId bigint,@whether_vigilanceA' expects the parameter '@whether_vigilanceAngelPending', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending_13Service.ComplaintWithVigilanceAnglePending_13Service.insertComplaintWithVigilanceAnglePending(ComplaintWithVigilanceAnglePending complaintWithVigilanceAnglePendingModel)
+ClientConnectionId:17364549-0d7f-475e-9987-869a6e7e1a47
+Error Number:8178,State:1,Class:16
+2025-07-22 11:18:22.969 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:18:22.969 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)" in 1756.1668ms
+2025-07-22 11:18:22.969 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:18:22.969 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - 200 null "application/json; charset=utf-8" 1766.3196ms
+2025-07-22 11:19:02.000 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:19:02.001 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:19:02.001 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:19:05.425 +05:30 [Error] Failed executing DbCommand ("16"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?', @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?', @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:23:32.638 +05:30 [Error] Failed to Insert usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@MasterReferenceId bigint,@officerId bigint,@whether_vigilanceA' expects the parameter '@whether_vigilanceAngelPending', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending_13Service.ComplaintWithVigilanceAnglePending_13Service.insertComplaintWithVigilanceAnglePending(ComplaintWithVigilanceAnglePending complaintWithVigilanceAnglePendingModel)
+ClientConnectionId:17364549-0d7f-475e-9987-869a6e7e1a47
+Error Number:8178,State:1,Class:16
+2025-07-22 11:23:32.660 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 11:23:32.661 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:23:32.661 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)" in 270660.1756ms
+2025-07-22 11:23:32.661 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:23:32.661 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - 200 null "application/json; charset=utf-8" 270661.9ms
+2025-07-22 11:23:46.007 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:23:46.008 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:23:46.008 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:23:53.291 +05:30 [Error] Failed executing DbCommand ("2"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?', @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?', @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:26:55.039 +05:30 [Error] Failed to Insert usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@MasterReferenceId bigint,@officerId bigint,@whether_vigilanceA' expects the parameter '@whether_vigilanceAngelPending', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending_13Service.ComplaintWithVigilanceAnglePending_13Service.insertComplaintWithVigilanceAnglePending(ComplaintWithVigilanceAnglePending complaintWithVigilanceAnglePendingModel)
+ClientConnectionId:160035f3-61d1-4ffa-9c99-7b9b3b6f7f53
+Error Number:8178,State:1,Class:16
+2025-07-22 11:26:55.057 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 11:26:55.058 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:26:55.059 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)" in 189050.809ms
+2025-07-22 11:26:55.059 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:26:55.059 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - 200 null "application/json; charset=utf-8" 189052.205ms
+2025-07-22 11:26:57.632 +05:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - "application/json" 408
+2025-07-22 11:26:57.633 +05:30 [Information] Executing endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:26:57.633 +05:30 [Information] Route matched with "{action = \"AddComplaintWithVigilanceAnglePending\", controller = \"ComplaintWithVigilanceAnglePending_13\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddComplaintWithVigilanceAnglePending(VigilanceClearance.Application.DTOs.Requests.ComplaintWithVigilanceAnglePending)" on controller "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller" ("VigilanceClearance.API").
+2025-07-22 11:27:40.305 +05:30 [Error] Failed executing DbCommand ("16"ms) [Parameters=["@MasterReferenceId='?' (DbType = Int64), @officerId='?' (DbType = Int64), @whether_vigilanceAngelPending='?', @detailsOfTheCase='?' (Size = 53), @presentStatusOftheCase='?' (Size = 29), @addtionalRemarks='?', @CreatedBy='?' (Size = 22), @CreatedBy_SessionId='?' (Size = 11), @CreatedBy_IP='?' (Size = 11)"], CommandType='Text', CommandTimeout='30']"
+""EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
+                               @officerId, 
+                               @whether_vigilanceAngelPending, 
+                               @detailsOfTheCase, 
+                               @presentStatusOftheCase, 
+                               @addtionalRemarks,
+                               @CreatedBy, 
+                               @CreatedBy_SessionId, 
+                               @CreatedBy_IP"
+2025-07-22 11:31:07.081 +05:30 [Error] Failed to Insert usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+Microsoft.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@MasterReferenceId bigint,@officerId bigint,@whether_vigilanceA' expects the parameter '@whether_vigilanceAngelPending', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending_13Service.ComplaintWithVigilanceAnglePending_13Service.insertComplaintWithVigilanceAnglePending(ComplaintWithVigilanceAnglePending complaintWithVigilanceAnglePendingModel)
+ClientConnectionId:160035f3-61d1-4ffa-9c99-7b9b3b6f7f53
+Error Number:8178,State:1,Class:16
+2025-07-22 11:31:07.106 +05:30 [Information] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([CreatedAt], [Level], [Message], [StackTrace])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+2025-07-22 11:31:07.107 +05:30 [Information] Executing "OkObjectResult", writing value of type '"VigilanceClearance.Application.DTOs.Responses.BaseResponseModel"'.
+2025-07-22 11:31:07.111 +05:30 [Information] Executed action "VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)" in 249477.5868ms
+2025-07-22 11:31:07.111 +05:30 [Information] Executed endpoint '"VigilanceClearance.API.Controllers.ComplaintWithVigilanceAnglePending_13Controller.AddComplaintWithVigilanceAnglePending (VigilanceClearance.API)"'
+2025-07-22 11:31:07.111 +05:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:44375""""/api/ComplaintWithVigilanceAnglePending_13/addComplaintWithVigilanceAnglePending""" - 200 null "application/json; charset=utf-8" 249478.8186ms
+2025-07-22 11:31:08.073 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - null null
+2025-07-22 11:31:08.086 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 12.5089ms
+2025-07-22 11:31:08.099 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - null null
+2025-07-22 11:31:08.099 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-07-22 11:31:08.100 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_framework/aspnetcore-browser-refresh.js""" - 200 13780 "application/javascript; charset=utf-8" 0.8951ms
+2025-07-22 11:31:08.109 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 9.4869ms
+2025-07-22 11:31:08.227 +05:30 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - null null
+2025-07-22 11:31:08.242 +05:30 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:44375""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 15.1332ms

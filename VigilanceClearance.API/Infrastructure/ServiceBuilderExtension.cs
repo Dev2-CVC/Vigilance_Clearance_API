@@ -23,6 +23,7 @@ using VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePending
 using VigilanceClearance.Application.Services.Coord2_DealingHand;
 using VigilanceClearance.Application.Services.DisciplinaryCriminalProceedings_11Service;
 using VigilanceClearance.Application.Services.IntegrityAgreedOrDoubtfulService;
+using VigilanceClearance.Application.Services.MinistryService;
 using VigilanceClearance.Application.Services.OfficerDetailsService;
 using VigilanceClearance.Application.Services.OfficerPostingDetailsService;
 using VigilanceClearance.Application.Services.PunishmentAwarded_10Service;
@@ -58,7 +59,7 @@ namespace VigilanceClearance.API.Infrastructure
             services.AddScoped<IDisciplinaryCriminalProceedings_11, DisciplinaryCriminalProceedings_11Service>();
             services.AddScoped<IActionContemplatedAgainstTheOfficer_12, ActionContemplatedAgainstTheOfficer_12Service>();
             services.AddScoped<IComplaintWithVigilanceAnglePending, ComplaintWithVigilanceAnglePending_13Service>();
-
+            services.AddScoped<IMinistry, MinistryService>();
             services.AddScoped<IUserInterface, UserService>();
         }
     }

@@ -37,6 +37,7 @@ namespace VigilanceClearance.Application.Services.ActionContemplatedAgainstTheOf
             {
                 var parameters = new[]
                 {
+                     new SqlParameter("@MasterReferenceId", actionContemplatedAgainstTheOfficerMode.MasterReferenceId),
                       new SqlParameter("@officerId", actionContemplatedAgainstTheOfficerMode.officerId),
                       new SqlParameter("@whether_CaseContemplated", actionContemplatedAgainstTheOfficerMode.whether_CaseContemplated),
                       new SqlParameter("@detailsOfTheCase", actionContemplatedAgainstTheOfficerMode.detailsOfTheCase),
@@ -48,6 +49,7 @@ namespace VigilanceClearance.Application.Services.ActionContemplatedAgainstTheOf
 
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
                               @"EXEC usp_tbl_Transaction_12_ActionContemplatedAgainstTheOfficerAsOnDate_1_Insert 
+                               @MasterReferenceId,
                                @officerId, 
                                @whether_CaseContemplated, 
                                @detailsOfTheCase, 

@@ -13,8 +13,8 @@ namespace VigilanceClearance.Application.DTOs.Requests
         [Required(ErrorMessage = "OfficerId is required")]
        
         public long? OfficerId { get; set; }
-
-      
+        [Required(ErrorMessage = "Please Enter MasterReference Id")]
+        public long? MasterReferenceId { get; set; }
         public string? EnteredInTheList { get; set; }
 
         public DateTime? DateOfEntryInTheList { get; set; }

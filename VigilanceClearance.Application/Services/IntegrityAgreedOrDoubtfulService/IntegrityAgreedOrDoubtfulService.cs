@@ -76,19 +76,21 @@ namespace VigilanceClearance.Application.Services.IntegrityAgreedOrDoubtfulServi
             {
                 var parameters = new[]
                 {
+                    new SqlParameter("@MasterReferenceId", integrityAgreedOrDoubtfulInsert.MasterReferenceId),
             new SqlParameter("@officerId", integrityAgreedOrDoubtfulInsert.OfficerId),
             new SqlParameter("@enteredInTheList", integrityAgreedOrDoubtfulInsert.EnteredInTheList),
              new SqlParameter("@dateOfEntryInTheList", integrityAgreedOrDoubtfulInsert.DateOfEntryInTheList),
               new SqlParameter("@removedFromTheList", integrityAgreedOrDoubtfulInsert.RemovedFromTheList),
                new SqlParameter("@DateOfRemovalFromTheList", integrityAgreedOrDoubtfulInsert.DateOfRemovalFromTheList),
                 new SqlParameter("@CreatedBy", integrityAgreedOrDoubtfulInsert.ActionBy),
-             new SqlParameter("@CreatedOn", integrityAgreedOrDoubtfulInsert.ActionOn),
-                  new SqlParameter("@CreatedBy_SessionId", integrityAgreedOrDoubtfulInsert.ActionBy_SessionId),
-                    new SqlParameter("@CreatedBy_IP", integrityAgreedOrDoubtfulInsert.ActionBy_IP)                   
+                   new SqlParameter("@CreatedOn", integrityAgreedOrDoubtfulInsert.ActionOn),
+                 new SqlParameter("@CreatedBy_SessionId", integrityAgreedOrDoubtfulInsert.ActionBy_SessionId),
+                new SqlParameter("@CreatedBy_IP", integrityAgreedOrDoubtfulInsert.ActionBy_IP)                   
                 };
                
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
       @"EXEC usp_tbl_Transaction_8_IntegrityAgreedOrDoubtful_1_Insert 
+          @MasterReferenceId,
         @officerId, 
         @enteredInTheList, 
         @dateOfEntryInTheList, 

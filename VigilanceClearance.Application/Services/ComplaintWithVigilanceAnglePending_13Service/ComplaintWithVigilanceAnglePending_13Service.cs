@@ -37,18 +37,20 @@ namespace VigilanceClearance.Application.Services.ComplaintWithVigilanceAnglePen
             {
                 var parameters = new[]
                 {
+                     new SqlParameter("@MasterReferenceId", complaintWithVigilanceAnglePendingModel.MasterReferenceId),
                       new SqlParameter("@officerId", complaintWithVigilanceAnglePendingModel.officerId),
-                      new SqlParameter("@whether_vigilanceAngelPending", complaintWithVigilanceAnglePendingModel.whether_vigilanceAngelPending),
+                      new SqlParameter("@whether_vigilanceAngelPending", complaintWithVigilanceAnglePendingModel.whether_vigilanceAnglePending),
                       new SqlParameter("@detailsOfTheCase", complaintWithVigilanceAnglePendingModel.detailsOfTheCase),
                       new SqlParameter("@presentStatusOftheCase", complaintWithVigilanceAnglePendingModel.presentStatusOftheCase),
-                      new SqlParameter("@addtionalRemarks", complaintWithVigilanceAnglePendingModel.addtionalRemarks),
+                      new SqlParameter("@addtionalRemarks", complaintWithVigilanceAnglePendingModel.additionalRemarks),
                       new SqlParameter("@CreatedBy", complaintWithVigilanceAnglePendingModel.ActionBy),
                       new SqlParameter("@CreatedBy_SessionId", complaintWithVigilanceAnglePendingModel.ActionBy_SessionId),
                       new SqlParameter("@CreatedBy_IP", complaintWithVigilanceAnglePendingModel.ActionBy_IP)
                 };
 
                 var result = await _vCDbContext.Database.ExecuteSqlRawAsync(
-                              @"EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert 
+                              @"EXEC usp_tbl_Transaction_13_ComplaintWithVigilanceAnglePending_1_Insert
+                              @MasterReferenceId,
                                @officerId, 
                                @whether_vigilanceAngelPending, 
                                @detailsOfTheCase, 

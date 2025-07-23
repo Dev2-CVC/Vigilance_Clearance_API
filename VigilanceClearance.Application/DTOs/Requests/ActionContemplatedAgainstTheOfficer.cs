@@ -9,6 +9,8 @@ namespace VigilanceClearance.Application.DTOs.Requests
 {
     public class ActionContemplatedAgainstTheOfficer
     {
+        [Required(ErrorMessage = "Please Enter MasterReference Id")]
+        public long? MasterReferenceId { get; set; }
         [Required(ErrorMessage ="Officer ID Required")]
         public long? officerId { get; set; }
         public string? whether_CaseContemplated { get; set; }
